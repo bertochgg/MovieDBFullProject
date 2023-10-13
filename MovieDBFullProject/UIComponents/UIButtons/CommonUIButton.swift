@@ -7,14 +7,33 @@
 
 import UIKit
 
-class CustomUIButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+final class CommonUIButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupCommonButton(buttonColor: UIColor,
+                           buttonTitle: String,
+                           textColor: UIColor,
+                           fontSize: CGFloat,
+                           fontWeight: UIFont.Weight,
+                           borderColor: UIColor? = nil,
+                           borderWidth: CGFloat? = nil,
+                           buttonImage: UIImage? = nil) {
+        layer.cornerRadius = 8
+        backgroundColor = buttonColor
+        setTitleColor(textColor, for: .normal)
+        layer.borderWidth = borderWidth ?? 0
+        layer.borderColor = borderColor?.cgColor
+        setImage(buttonImage, for: .normal)
+        setTitle(buttonTitle, for: .normal)
+        titleLabel?.textAlignment = .center
+        titleLabel?.font = .systemFont(ofSize: fontSize, weight: fontWeight)
+    }
+    
 }

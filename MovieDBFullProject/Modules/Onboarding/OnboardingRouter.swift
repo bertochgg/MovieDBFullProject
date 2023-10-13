@@ -5,4 +5,29 @@
 //  Created by Cesar Humberto Grifaldo Garcia on 04/10/23.
 //
 
-import Foundation
+import UIKit
+
+final class OnboardingRouter: PresenterToRouterOnboardingProtocol {
+    
+    
+    weak var viewController: UIViewController?
+    
+    static func createOnboardingModule() -> UIViewController {
+        // Init dependencies
+        let router: PresenterToRouterOnboardingProtocol = OnboardingRouter()
+        let presenter: ViewToPresenterOnboardingProtocol = OnboardingPresenter(router: router)
+        let view = OnboardingViewController(presenter: presenter)
+        
+        router.viewController = view
+        
+        return view
+    }
+    
+//    func createSignInModule() -> UINavigationController {
+//
+//    }
+//
+//    func createSignUpModule() -> UINavigationController {
+//
+//    }
+}

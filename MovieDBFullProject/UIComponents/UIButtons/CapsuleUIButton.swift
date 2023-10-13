@@ -7,14 +7,23 @@
 
 import UIKit
 
-class CapsuleUIButton: UIButton {
+final class CapsuleUIButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupCapsuleButton()
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupCapsuleButton() {
+        layer.cornerRadius = 28
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.titleWhite.cgColor
+        
+        backgroundColor = .black
+        setTitleColor(.titleWhite, for: .normal)
+    }
 }

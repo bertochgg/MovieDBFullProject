@@ -9,13 +9,32 @@
 /* Begin PBXBuildFile section */
 		DB17092B2ACE214E00408A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17092A2ACE214E00408A66 /* AppDelegate.swift */; };
 		DB17092D2ACE214E00408A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17092C2ACE214E00408A66 /* SceneDelegate.swift */; };
-		DB17092F2ACE214E00408A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17092E2ACE214E00408A66 /* ViewController.swift */; };
-		DB1709322ACE214E00408A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1709302ACE214E00408A66 /* Main.storyboard */; };
 		DB1709342ACE215000408A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1709332ACE215000408A66 /* Assets.xcassets */; };
 		DB1709372ACE215000408A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1709352ACE215000408A66 /* LaunchScreen.storyboard */; };
 		DB1709422ACE215100408A66 /* MovieDBFullProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709412ACE215100408A66 /* MovieDBFullProjectTests.swift */; };
 		DB17094C2ACE215100408A66 /* MovieDBFullProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17094B2ACE215100408A66 /* MovieDBFullProjectUITests.swift */; };
 		DB17094E2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17094D2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift */; };
+		DB1709642ACE255E00408A66 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709632ACE255E00408A66 /* OnboardingViewController.swift */; };
+		DB1709662ACE257C00408A66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709652ACE257C00408A66 /* BaseViewController.swift */; };
+		DB17096A2ACE259D00408A66 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */; };
+		DB17096E2ACE25B100408A66 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */; };
+		DB1709712ACE25C500408A66 /* OnboardingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */; };
+		DB1709732ACE29BE00408A66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709722ACE29BE00408A66 /* Constants.swift */; };
+		DB17097F2ACE32A100408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709762ACE32A000408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		DB1709802ACE32A100408A66 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709772ACE32A000408A66 /* SFPRODISPLAYHEAVYITALIC.OTF */; };
+		DB1709812ACE32A100408A66 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709782ACE32A000408A66 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */; };
+		DB1709822ACE32A100408A66 /* SFPRODISPLAYTHINITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709792ACE32A100408A66 /* SFPRODISPLAYTHINITALIC.OTF */; };
+		DB1709832ACE32A100408A66 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB17097A2ACE32A100408A66 /* SFPRODISPLAYREGULAR.OTF */; };
+		DB1709842ACE32A100408A66 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB17097B2ACE32A100408A66 /* SFPRODISPLAYLIGHTITALIC.OTF */; };
+		DB1709852ACE32A100408A66 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB17097C2ACE32A100408A66 /* SFPRODISPLAYBLACKITALIC.OTF */; };
+		DB1709862ACE32A100408A66 /* SfProDisplayBold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB17097D2ACE32A100408A66 /* SfProDisplayBold.OTF */; };
+		DB1709872ACE32A100408A66 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB17097E2ACE32A100408A66 /* SFPRODISPLAYMEDIUM.OTF */; };
+		DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */; };
+		DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */; };
+		DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */; };
+		DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */; };
+		DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */; };
+		DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +58,6 @@
 		DB1709272ACE214E00408A66 /* MovieDBFullProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDBFullProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB17092A2ACE214E00408A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB17092C2ACE214E00408A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB17092E2ACE214E00408A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB1709312ACE214E00408A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB1709332ACE215000408A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1709362ACE215000408A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB1709382ACE215000408A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,27 @@
 		DB1709472ACE215100408A66 /* MovieDBFullProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBFullProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB17094B2ACE215100408A66 /* MovieDBFullProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBFullProjectUITests.swift; sourceTree = "<group>"; };
 		DB17094D2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBFullProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB1709632ACE255E00408A66 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DB1709652ACE257C00408A66 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProtocols.swift; sourceTree = "<group>"; };
+		DB1709722ACE29BE00408A66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB1709762ACE32A000408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		DB1709772ACE32A000408A66 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
+		DB1709782ACE32A000408A66 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYULTRALIGHTITALIC.OTF; sourceTree = "<group>"; };
+		DB1709792ACE32A100408A66 /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYTHINITALIC.OTF; sourceTree = "<group>"; };
+		DB17097A2ACE32A100408A66 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		DB17097B2ACE32A100408A66 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
+		DB17097C2ACE32A100408A66 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
+		DB17097D2ACE32A100408A66 /* SfProDisplayBold.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SfProDisplayBold.OTF; sourceTree = "<group>"; };
+		DB17097E2ACE32A100408A66 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+NewFonts.swift"; sourceTree = "<group>"; };
+		DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
+		DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+NewColors.swift"; sourceTree = "<group>"; };
+		DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleUIButton.swift; sourceTree = "<group>"; };
+		DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIProgressView.swift; sourceTree = "<group>"; };
+		DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +137,14 @@
 		DB1709292ACE214E00408A66 /* MovieDBFullProject */ = {
 			isa = PBXGroup;
 			children = (
-				DB17092A2ACE214E00408A66 /* AppDelegate.swift */,
-				DB17092C2ACE214E00408A66 /* SceneDelegate.swift */,
-				DB17092E2ACE214E00408A66 /* ViewController.swift */,
-				DB1709302ACE214E00408A66 /* Main.storyboard */,
-				DB1709332ACE215000408A66 /* Assets.xcassets */,
-				DB1709352ACE215000408A66 /* LaunchScreen.storyboard */,
+				DB1709622ACE251300408A66 /* UIComponents */,
+				DB1709602ACE249800408A66 /* Protocols */,
+				DB17095F2ACE249200408A66 /* Services */,
+				DB17095E2ACE248D00408A66 /* Common */,
+				DB17095D2ACE248600408A66 /* Extensions */,
+				DB17095C2ACE248000408A66 /* Modules */,
+				DB17095A2ACE246500408A66 /* Application */,
+				DB17095B2ACE247600408A66 /* Resources */,
 				DB1709382ACE215000408A66 /* Info.plist */,
 			);
 			path = MovieDBFullProject;
@@ -125,6 +165,151 @@
 				DB17094D2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift */,
 			);
 			path = MovieDBFullProjectUITests;
+			sourceTree = "<group>";
+		};
+		DB17095A2ACE246500408A66 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DB17092A2ACE214E00408A66 /* AppDelegate.swift */,
+				DB17092C2ACE214E00408A66 /* SceneDelegate.swift */,
+				DB1709352ACE215000408A66 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DB17095B2ACE247600408A66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB17098C2ACE36AF00408A66 /* Colors */,
+				DB1709742ACE31A000408A66 /* Fonts */,
+				DB1709332ACE215000408A66 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB17095C2ACE248000408A66 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DBB019882AD9C32D00AF1CC6 /* SignUp */,
+				DB1709612ACE24B200408A66 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DB17095D2ACE248600408A66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */,
+				DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB17095E2ACE248D00408A66 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB1709722ACE29BE00408A66 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB17095F2ACE249200408A66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB1709602ACE249800408A66 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DB17096F2ACE25B700408A66 /* Onboarding */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DB1709612ACE24B200408A66 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DB1709632ACE255E00408A66 /* OnboardingViewController.swift */,
+				DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */,
+				DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DB1709622ACE251300408A66 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DBB0198A2AD9C39500AF1CC6 /* UIViewControllers */,
+				DBB019892AD9C38900AF1CC6 /* UIButtons */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DB17096F2ACE25B700408A66 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DB1709742ACE31A000408A66 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB1709752ACE31A900408A66 /* SFProDisplay */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB1709752ACE31A900408A66 /* SFProDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				DB17097C2ACE32A100408A66 /* SFPRODISPLAYBLACKITALIC.OTF */,
+				DB17097D2ACE32A100408A66 /* SfProDisplayBold.OTF */,
+				DB1709772ACE32A000408A66 /* SFPRODISPLAYHEAVYITALIC.OTF */,
+				DB17097B2ACE32A100408A66 /* SFPRODISPLAYLIGHTITALIC.OTF */,
+				DB17097E2ACE32A100408A66 /* SFPRODISPLAYMEDIUM.OTF */,
+				DB17097A2ACE32A100408A66 /* SFPRODISPLAYREGULAR.OTF */,
+				DB1709762ACE32A000408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+				DB1709792ACE32A100408A66 /* SFPRODISPLAYTHINITALIC.OTF */,
+				DB1709782ACE32A000408A66 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */,
+			);
+			path = SFProDisplay;
+			sourceTree = "<group>";
+		};
+		DB17098C2ACE36AF00408A66 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		DBB019882AD9C32D00AF1CC6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		DBB019892AD9C38900AF1CC6 /* UIButtons */ = {
+			isa = PBXGroup;
+			children = (
+				DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */,
+				DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */,
+				DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */,
+			);
+			path = UIButtons;
+			sourceTree = "<group>";
+		};
+		DBB0198A2AD9C39500AF1CC6 /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB1709652ACE257C00408A66 /* BaseViewController.swift */,
+			);
+			path = UIViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +416,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1709872ACE32A100408A66 /* SFPRODISPLAYMEDIUM.OTF in Resources */,
+				DB1709842ACE32A100408A66 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */,
+				DB1709852ACE32A100408A66 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
+				DB1709822ACE32A100408A66 /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
 				DB1709372ACE215000408A66 /* LaunchScreen.storyboard in Resources */,
+				DB1709802ACE32A100408A66 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
+				DB1709832ACE32A100408A66 /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				DB17097F2ACE32A100408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
 				DB1709342ACE215000408A66 /* Assets.xcassets in Resources */,
-				DB1709322ACE214E00408A66 /* Main.storyboard in Resources */,
+				DB1709862ACE32A100408A66 /* SfProDisplayBold.OTF in Resources */,
+				DB1709812ACE32A100408A66 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +451,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB17092F2ACE214E00408A66 /* ViewController.swift in Sources */,
+				DB1709712ACE25C500408A66 /* OnboardingProtocols.swift in Sources */,
+				DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */,
+				DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */,
 				DB17092B2ACE214E00408A66 /* AppDelegate.swift in Sources */,
+				DB1709662ACE257C00408A66 /* BaseViewController.swift in Sources */,
+				DB1709642ACE255E00408A66 /* OnboardingViewController.swift in Sources */,
+				DB17096A2ACE259D00408A66 /* OnboardingPresenter.swift in Sources */,
+				DB1709732ACE29BE00408A66 /* Constants.swift in Sources */,
+				DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */,
+				DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */,
 				DB17092D2ACE214E00408A66 /* SceneDelegate.swift in Sources */,
+				DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */,
+				DB17096E2ACE25B100408A66 /* OnboardingRouter.swift in Sources */,
+				DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +501,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB1709302ACE214E00408A66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB1709312ACE214E00408A66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB1709352ACE215000408A66 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -447,9 +643,9 @@
 				INFOPLIST_FILE = MovieDBFullProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +653,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bertochgg.chgg.MovieDBFullProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -475,9 +674,9 @@
 				INFOPLIST_FILE = MovieDBFullProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +684,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bertochgg.chgg.MovieDBFullProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

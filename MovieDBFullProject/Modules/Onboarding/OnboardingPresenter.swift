@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+final class OnboardingPresenter: ViewToPresenterOnboardingProtocol {
+    private let router: PresenterToRouterOnboardingProtocol
+    
+    init(router: PresenterToRouterOnboardingProtocol) {
+        self.router = router
+    }
+    
+    func signInButtonTapped() {
+        
+    }
+    
+    func signUpButtonTapped() {
+        
+    }
+}
