@@ -11,19 +11,29 @@ final class CapsuleUIButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupCapsuleButton()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupCapsuleButton() {
+    func setupCapsuleButton(buttonColor: UIColor,
+                           buttonTitle: String,
+                           textColor: UIColor,
+                           fontSize: CGFloat,
+                           fontWeight: UIFont.Weight,
+                           borderColor: UIColor? = nil,
+                           borderWidth: CGFloat? = nil,
+                           buttonImage: UIImage? = nil) {
         layer.cornerRadius = 28
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.titleWhite.cgColor
+        backgroundColor = buttonColor
+        setTitleColor(textColor, for: .normal)
+        layer.borderWidth = borderWidth ?? 0
+        layer.borderColor = borderColor?.cgColor
+        setImage(buttonImage, for: .normal)
+        setTitle(buttonTitle, for: .normal)
+        titleLabel?.textAlignment = .center
+        titleLabel?.font = .systemFont(ofSize: fontSize, weight: fontWeight)
         
-        backgroundColor = .black
-        setTitleColor(.titleWhite, for: .normal)
     }
 }

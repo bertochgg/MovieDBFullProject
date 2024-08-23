@@ -10,7 +10,7 @@ import UIKit
 // MARK: - View Input (View -> Presenter)
 protocol ViewToPresenterOnboardingProtocol: AnyObject {
     func signInButtonTapped()
-    func signUpButtonTapped()
+    func signUpButtonTapped(with navigationController: UINavigationController)
 }
 
 // MARK: - View Output (Presenter -> View)
@@ -25,5 +25,5 @@ protocol PresenterToRouterOnboardingProtocol: AnyObject {
     static func createOnboardingModule() -> UIViewController
     
 //    func createSignInModule() -> UINavigationController
-//    func createSignUpModule() -> UINavigationController
+    func createSignUpModule(with navigationController: UINavigationController)
 }

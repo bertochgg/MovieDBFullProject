@@ -20,7 +20,7 @@ final class CustomUIProgressView: UIProgressView {
     
     private func setupCustomProgressView() {
         layer.cornerRadius = 12
-        backgroundColor = .moviesBlack
-        progressTintColor = .titleWhite
+        backgroundColor = .midnightShadow
+        progressTintColor = .frostedPearl
     }
 }

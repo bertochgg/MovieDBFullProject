@@ -62,8 +62,8 @@ final class OnboardingViewController: UIViewController {
     lazy private var onboardingTitleLabel: UILabel = {
         let label = UILabel()
         label.text = OnboardingViewConstants.Strings.onboardingTitleLabelText
-        label.font = .systemFont(ofSize: OnboardingViewConstants.Numbers.fontSize36, weight: .bold, width: .standard)
-        label.textColor = .titleWhite
+        label.font = .systemBold36
+        label.textColor = .frostedPearl
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -72,8 +72,8 @@ final class OnboardingViewController: UIViewController {
     lazy private var onboardingDescriptionLabel: UILabel = {
         let label = UILabel()
         label.text = OnboardingViewConstants.Strings.onboardingDescriptionLabelText
-        label.textColor = .descriptionGray
-        label.font = .systemFont(ofSize: OnboardingViewConstants.Numbers.fontSize16, weight: .medium)
+        label.textColor = .slateMist
+        label.font = .systemMedium16
         label.numberOfLines = 1
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
@@ -83,8 +83,8 @@ final class OnboardingViewController: UIViewController {
     lazy private var onboardingSubDescriptionLabel: UILabel = {
         let label = UILabel()
         label.text = OnboardingViewConstants.Strings.onboardingDescriptionLabelTextPartTwo
-        label.textColor = .descriptionGray
-        label.font = .systemFont(ofSize: OnboardingViewConstants.Numbers.fontSize16, weight: .medium)
+        label.textColor = .slateMist
+        label.font = .systemMedium16
         label.numberOfLines = 1
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
@@ -100,33 +100,15 @@ final class OnboardingViewController: UIViewController {
         return stackView
     }()
     
-    lazy private var signInButton: CommonUIButton = {
-        let button = CommonUIButton(type: .system)
-        button.setupCommonButton(buttonColor: .titleWhite,
-                                 buttonTitle: OnboardingViewConstants.Strings.onboardingSignInButtonText,
-                                 textColor: .black,
-                                 fontSize: OnboardingViewConstants.Numbers.fontSize16,
-                                 fontWeight: .medium)
-        return button
-    }()
-    
-    lazy private var signUpButton: CommonUIButton = {
-        let button = CommonUIButton(type: .system)
-        button.setupCommonButton(buttonColor: .black,
-                                 buttonTitle: OnboardingViewConstants.Strings.onboardingSignUpButtonText,
-                                 textColor: .titleWhite,
-                                 fontSize: OnboardingViewConstants.Numbers.fontSize16,
-                                 fontWeight: .medium,
-                                 borderColor: .white,
-                                 borderWidth: OnboardingViewConstants.Numbers.buttonBorderWidth)
-        return button
-    }()
+    lazy private var signInButton = CommonUIButton(textColor: .black, backgroundColor: .frostedPearl, buttonTitle: OnboardingViewConstants.Strings.onboardingSignInButtonText)
+    lazy private var signUpButton = CommonUIButton(textColor: .frostedPearl, backgroundColor: .black, buttonTitle: OnboardingViewConstants.Strings.onboardingSignUpButtonText, borderIsNeeded: true)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         setupGradientOverlay()
         setupViews()
+        signUpButton.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
     }
     
     private func setupViews() {
@@ -180,13 +162,12 @@ final class OnboardingViewController: UIViewController {
 }
 
 private extension OnboardingViewController {
-    @objc
-    func signIn() {
+    @objc func signInTapped() {
         self.presenter.signInButtonTapped()
     }
     
-    @objc
-    func signUp() {
-        self.presenter.signUpButtonTapped()
+    @objc func signUpTapped() {
+        guard let navigationController = navigationController else { return }
+        self.presenter.signUpButtonTapped(with: navigationController)
     }
 }

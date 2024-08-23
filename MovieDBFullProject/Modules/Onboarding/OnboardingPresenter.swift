@@ -5,7 +5,7 @@
 //  Created by Cesar Humberto Grifaldo Garcia on 04/10/23.
 //
 
-import Foundation
+import UIKit
 
 final class OnboardingPresenter: ViewToPresenterOnboardingProtocol {
     private let router: PresenterToRouterOnboardingProtocol
@@ -18,7 +18,7 @@ final class OnboardingPresenter: ViewToPresenterOnboardingProtocol {
         
     }
     
-    func signUpButtonTapped() {
-        
+    func signUpButtonTapped(with navigationController: UINavigationController) {
+        router.createSignUpModule(with: navigationController)
     }
 }

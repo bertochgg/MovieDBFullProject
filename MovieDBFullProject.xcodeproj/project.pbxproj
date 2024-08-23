@@ -32,6 +32,25 @@
 		DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */; };
 		DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */; };
 		DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */; };
+		DB1752CB2B90F8460005A535 /* EmailSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */; };
+		DB1BFAA42B92357E002328CA /* PasswordSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */; };
+		DB1BFAA62B923587002328CA /* PasswordSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */; };
+		DB1BFAA82B923590002328CA /* PasswordSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */; };
+		DB1BFAAA2B9235AC002328CA /* PasswordSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */; };
+		DB1CF22C2ADE0CBC00175181 /* SignUpFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1CF22B2ADE0CBC00175181 /* SignUpFirebaseService.swift */; };
+		DB2D00E02C137998002D05E1 /* GenericUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */; };
+		DB35257E2B8FA60C0031DD2F /* SignInEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35257D2B8FA60C0031DD2F /* SignInEntity.swift */; };
+		DB3525812B8FB5A10031DD2F /* NameSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */; };
+		DB3525832B8FB5B10031DD2F /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */; };
+		DB3525852B8FB5C10031DD2F /* PasswordSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */; };
+		DB3525882B8FB6030031DD2F /* BaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */; };
+		DB35258B2B8FD1A40031DD2F /* NameSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */; };
+		DB35258D2B8FD1B40031DD2F /* NameSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */; };
+		DB35258F2B8FD1CD0031DD2F /* NameSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */; };
+		DB3525922B8FDF380031DD2F /* EmailSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */; };
+		DB3525942B8FDF460031DD2F /* EmailSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */; };
+		DB3525962B8FDF560031DD2F /* EmailSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */; };
+		DB3525982B8FDF870031DD2F /* NameSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */; };
 		DB37DBCD2ADDE95600269869 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB37DBCC2ADDE95600269869 /* GoogleService-Info.plist */; };
 		DB37DBD02ADDEA6900269869 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBCF2ADDEA6900269869 /* FirebaseAnalytics */; };
 		DB37DBD22ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD12ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -60,9 +79,13 @@
 		DB37DC002ADDEA6900269869 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBFF2ADDEA6900269869 /* FirebaseRemoteConfigSwift */; };
 		DB37DC022ADDEA6900269869 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DC012ADDEA6900269869 /* FirebaseStorage */; };
 		DB37DC042ADDEA6900269869 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DC032ADDEA6900269869 /* FirebaseStorageCombine-Community */; };
+		DB381C132C1134D7000C6FF0 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB381C122C1134D7000C6FF0 /* CommonTextField.swift */; };
+		DB55ECDB2ADDFA4900B4DDF8 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */; };
+		DB55ECE02ADDFA7100B4DDF8 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */; };
 		DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */; };
 		DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */; };
 		DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */; };
+		DBC5FD9C2ADDF2FE00A103A9 /* Fonts+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5FD9B2ADDF2FE00A103A9 /* Fonts+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,10 +135,33 @@
 		DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+NewFonts.swift"; sourceTree = "<group>"; };
 		DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+NewColors.swift"; sourceTree = "<group>"; };
+		DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpRouter.swift; sourceTree = "<group>"; };
+		DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpInteractor.swift; sourceTree = "<group>"; };
+		DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpPresenter.swift; sourceTree = "<group>"; };
+		DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpRouter.swift; sourceTree = "<group>"; };
+		DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpProtocols.swift; sourceTree = "<group>"; };
+		DB1CF22B2ADE0CBC00175181 /* SignUpFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirebaseService.swift; sourceTree = "<group>"; };
+		DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericUILabel.swift; sourceTree = "<group>"; };
+		DB35257D2B8FA60C0031DD2F /* SignInEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEntity.swift; sourceTree = "<group>"; };
+		DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpViewController.swift; sourceTree = "<group>"; };
+		DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpViewController.swift; sourceTree = "<group>"; };
+		DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpViewController.swift; sourceTree = "<group>"; };
+		DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpInteractor.swift; sourceTree = "<group>"; };
+		DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpPresenter.swift; sourceTree = "<group>"; };
+		DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpProtocols.swift; sourceTree = "<group>"; };
+		DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpInteractor.swift; sourceTree = "<group>"; };
+		DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpPresenter.swift; sourceTree = "<group>"; };
+		DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpProtocols.swift; sourceTree = "<group>"; };
+		DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpRouter.swift; sourceTree = "<group>"; };
 		DB37DBCC2ADDE95600269869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB381C122C1134D7000C6FF0 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
+		DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
 		DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleUIButton.swift; sourceTree = "<group>"; };
 		DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIProgressView.swift; sourceTree = "<group>"; };
 		DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIButton.swift; sourceTree = "<group>"; };
+		DBC5FD9B2ADDF2FE00A103A9 /* Fonts+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +293,7 @@
 		DB17095C2ACE248000408A66 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DB35257C2B8FA5FA0031DD2F /* SignIn */,
 				DBB019882AD9C32D00AF1CC6 /* SignUp */,
 				DB1709612ACE24B200408A66 /* Onboarding */,
 			);
@@ -273,6 +320,7 @@
 		DB17095F2ACE249200408A66 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DB1CF22A2ADE0C9C00175181 /* LoginFirebaseService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -280,6 +328,7 @@
 		DB1709602ACE249800408A66 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				DB55ECDE2ADDFA6500B4DDF8 /* SignUp */,
 				DB17096F2ACE25B700408A66 /* Onboarding */,
 			);
 			path = Protocols;
@@ -298,6 +347,8 @@
 		DB1709622ACE251300408A66 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DB2D00DE2C13796E002D05E1 /* UILabels */,
+				DB381C112C1133CA000C6FF0 /* UITextFields */,
 				DBB0198A2AD9C39500AF1CC6 /* UIViewControllers */,
 				DBB019892AD9C38900AF1CC6 /* UIButtons */,
 			);
@@ -316,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1709752ACE31A900408A66 /* SFProDisplay */,
+				DBC5FD9B2ADDF2FE00A103A9 /* Fonts+Custom.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -344,9 +396,106 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
+		DB1752C92B90F67F0005A535 /* PasswordStep */ = {
+			isa = PBXGroup;
+			children = (
+				DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */,
+				DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */,
+				DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */,
+				DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */,
+				DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */,
+			);
+			path = PasswordStep;
+			sourceTree = "<group>";
+		};
+		DB1CF22A2ADE0C9C00175181 /* LoginFirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+				DB1CF22B2ADE0CBC00175181 /* SignUpFirebaseService.swift */,
+			);
+			path = LoginFirebaseService;
+			sourceTree = "<group>";
+		};
+		DB2D00DE2C13796E002D05E1 /* UILabels */ = {
+			isa = PBXGroup;
+			children = (
+				DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */,
+			);
+			path = UILabels;
+			sourceTree = "<group>";
+		};
+		DB35257C2B8FA5FA0031DD2F /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				DB35257D2B8FA60C0031DD2F /* SignInEntity.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		DB35257F2B8FB5860031DD2F /* Multi-Step */ = {
+			isa = PBXGroup;
+			children = (
+				DB3525862B8FB5DD0031DD2F /* Views */,
+				DB3525892B8FD1840031DD2F /* NameStep */,
+				DB3525902B8FDF1E0031DD2F /* EmailStep */,
+				DB1752C92B90F67F0005A535 /* PasswordStep */,
+			);
+			path = "Multi-Step";
+			sourceTree = "<group>";
+		};
+		DB3525862B8FB5DD0031DD2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB3525892B8FD1840031DD2F /* NameStep */ = {
+			isa = PBXGroup;
+			children = (
+				DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */,
+				DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */,
+				DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */,
+				DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */,
+				DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */,
+			);
+			path = NameStep;
+			sourceTree = "<group>";
+		};
+		DB3525902B8FDF1E0031DD2F /* EmailStep */ = {
+			isa = PBXGroup;
+			children = (
+				DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */,
+				DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */,
+				DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */,
+				DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */,
+				DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */,
+			);
+			path = EmailStep;
+			sourceTree = "<group>";
+		};
+		DB381C112C1133CA000C6FF0 /* UITextFields */ = {
+			isa = PBXGroup;
+			children = (
+				DB381C122C1134D7000C6FF0 /* CommonTextField.swift */,
+			);
+			path = UITextFields;
+			sourceTree = "<group>";
+		};
+		DB55ECDE2ADDFA6500B4DDF8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		DBB019882AD9C32D00AF1CC6 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				DB35257F2B8FB5860031DD2F /* Multi-Step */,
+				DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -541,19 +690,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB35258F2B8FD1CD0031DD2F /* NameSignUpProtocols.swift in Sources */,
+				DB35257E2B8FA60C0031DD2F /* SignInEntity.swift in Sources */,
+				DB35258B2B8FD1A40031DD2F /* NameSignUpInteractor.swift in Sources */,
+				DB3525852B8FB5C10031DD2F /* PasswordSignUpViewController.swift in Sources */,
 				DB1709712ACE25C500408A66 /* OnboardingProtocols.swift in Sources */,
 				DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */,
+				DB381C132C1134D7000C6FF0 /* CommonTextField.swift in Sources */,
 				DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */,
 				DB17092B2ACE214E00408A66 /* AppDelegate.swift in Sources */,
+				DB3525882B8FB6030031DD2F /* BaseSignUpViewController.swift in Sources */,
+				DB3525942B8FDF460031DD2F /* EmailSignUpPresenter.swift in Sources */,
+				DB3525812B8FB5A10031DD2F /* NameSignUpViewController.swift in Sources */,
+				DB1BFAA82B923590002328CA /* PasswordSignUpRouter.swift in Sources */,
 				DB1709662ACE257C00408A66 /* BaseViewController.swift in Sources */,
+				DB55ECE02ADDFA7100B4DDF8 /* SignUpProtocols.swift in Sources */,
+				DB3525982B8FDF870031DD2F /* NameSignUpRouter.swift in Sources */,
+				DB2D00E02C137998002D05E1 /* GenericUILabel.swift in Sources */,
+				DB3525922B8FDF380031DD2F /* EmailSignUpInteractor.swift in Sources */,
 				DB1709642ACE255E00408A66 /* OnboardingViewController.swift in Sources */,
+				DB1BFAAA2B9235AC002328CA /* PasswordSignUpProtocols.swift in Sources */,
+				DBC5FD9C2ADDF2FE00A103A9 /* Fonts+Custom.swift in Sources */,
+				DB35258D2B8FD1B40031DD2F /* NameSignUpPresenter.swift in Sources */,
+				DB3525962B8FDF560031DD2F /* EmailSignUpProtocols.swift in Sources */,
+				DB55ECDB2ADDFA4900B4DDF8 /* SignUpEntity.swift in Sources */,
 				DB17096A2ACE259D00408A66 /* OnboardingPresenter.swift in Sources */,
 				DB1709732ACE29BE00408A66 /* Constants.swift in Sources */,
 				DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */,
 				DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */,
+				DB1CF22C2ADE0CBC00175181 /* SignUpFirebaseService.swift in Sources */,
+				DB1BFAA62B923587002328CA /* PasswordSignUpPresenter.swift in Sources */,
+				DB3525832B8FB5B10031DD2F /* EmailSignUpViewController.swift in Sources */,
 				DB17092D2ACE214E00408A66 /* SceneDelegate.swift in Sources */,
 				DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */,
 				DB17096E2ACE25B100408A66 /* OnboardingRouter.swift in Sources */,
+				DB1BFAA42B92357E002328CA /* PasswordSignUpInteractor.swift in Sources */,
+				DB1752CB2B90F8460005A535 /* EmailSignUpRouter.swift in Sources */,
 				DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,7 +826,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -711,7 +883,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -735,7 +907,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,7 +938,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

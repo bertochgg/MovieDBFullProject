@@ -9,24 +9,28 @@ import UIKit
 
 extension UIColor {
     
-    class var titleWhite: UIColor {
+    class var frostedPearl: UIColor {
         return UIColor(hexString: "#EEEFF0") ?? .white
     }
     
-    class var descriptionGray: UIColor {
+    class var slateMist: UIColor {
         return UIColor(hexString: "#B9BFC1") ?? .gray
     }
     
-    class var moviesBlack: UIColor {
+    class var midnightShadow: UIColor {
         return UIColor(hexString: "#191B1C") ?? .black
     }
     
-    class var customButtonGray: UIColor {
+    class var charcoalAbyss: UIColor {
         return UIColor(hexString: "#272B2C") ?? .darkGray
     }
     
-    class var customTextLightGray: UIColor {
+    class var stormySky: UIColor {
         return UIColor(hexString: "#747E83") ?? .lightGray
+    }
+    
+    class var steelGray: UIColor {
+        return UIColor(hexString: "#656E72") ?? .lightGray
     }
 }
 

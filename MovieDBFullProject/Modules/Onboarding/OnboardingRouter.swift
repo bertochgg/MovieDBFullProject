@@ -27,7 +27,8 @@ final class OnboardingRouter: PresenterToRouterOnboardingProtocol {
 //
 //    }
 //
-//    func createSignUpModule() -> UINavigationController {
-//
-//    }
+    func createSignUpModule(with navigationController: UINavigationController) {
+        let signUpModule = NameSignUpRouter.createModule()
+        navigationController.pushViewController(signUpModule, animated: true)
+    }
 }
