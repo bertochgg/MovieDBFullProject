@@ -19,7 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
-        let navigationController = UINavigationController(rootViewController: OnboardingRouter.createOnboardingModule())
+        let navigationController = MVDBUINavigationController(rootViewController: MVDBLobbyRouter.createLobbyModule())
+        navigationController.navigationBar.barStyle = .black
+        navigationController.navigationBar.tintColor = .frostedPearl
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
 

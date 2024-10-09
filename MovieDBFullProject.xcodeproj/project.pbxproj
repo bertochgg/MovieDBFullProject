@@ -14,11 +14,7 @@
 		DB1709422ACE215100408A66 /* MovieDBFullProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709412ACE215100408A66 /* MovieDBFullProjectTests.swift */; };
 		DB17094C2ACE215100408A66 /* MovieDBFullProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17094B2ACE215100408A66 /* MovieDBFullProjectUITests.swift */; };
 		DB17094E2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17094D2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift */; };
-		DB1709642ACE255E00408A66 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709632ACE255E00408A66 /* OnboardingViewController.swift */; };
 		DB1709662ACE257C00408A66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709652ACE257C00408A66 /* BaseViewController.swift */; };
-		DB17096A2ACE259D00408A66 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */; };
-		DB17096E2ACE25B100408A66 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */; };
-		DB1709712ACE25C500408A66 /* OnboardingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */; };
 		DB1709732ACE29BE00408A66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1709722ACE29BE00408A66 /* Constants.swift */; };
 		DB17097F2ACE32A100408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709762ACE32A000408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
 		DB1709802ACE32A100408A66 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DB1709772ACE32A000408A66 /* SFPRODISPLAYHEAVYITALIC.OTF */; };
@@ -32,60 +28,41 @@
 		DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */; };
 		DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */; };
 		DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */; };
-		DB1752CB2B90F8460005A535 /* EmailSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */; };
-		DB1BFAA42B92357E002328CA /* PasswordSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */; };
-		DB1BFAA62B923587002328CA /* PasswordSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */; };
-		DB1BFAA82B923590002328CA /* PasswordSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */; };
-		DB1BFAAA2B9235AC002328CA /* PasswordSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */; };
 		DB1CF22C2ADE0CBC00175181 /* SignUpFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1CF22B2ADE0CBC00175181 /* SignUpFirebaseService.swift */; };
-		DB2D00E02C137998002D05E1 /* GenericUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */; };
+		DB2D00E02C137998002D05E1 /* MVDBUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D00DF2C137998002D05E1 /* MVDBUILabel.swift */; };
 		DB35257E2B8FA60C0031DD2F /* SignInEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35257D2B8FA60C0031DD2F /* SignInEntity.swift */; };
-		DB3525812B8FB5A10031DD2F /* NameSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */; };
-		DB3525832B8FB5B10031DD2F /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */; };
-		DB3525852B8FB5C10031DD2F /* PasswordSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */; };
-		DB3525882B8FB6030031DD2F /* BaseSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */; };
-		DB35258B2B8FD1A40031DD2F /* NameSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */; };
-		DB35258D2B8FD1B40031DD2F /* NameSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */; };
-		DB35258F2B8FD1CD0031DD2F /* NameSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */; };
-		DB3525922B8FDF380031DD2F /* EmailSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */; };
-		DB3525942B8FDF460031DD2F /* EmailSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */; };
-		DB3525962B8FDF560031DD2F /* EmailSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */; };
-		DB3525982B8FDF870031DD2F /* NameSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */; };
 		DB37DBCD2ADDE95600269869 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB37DBCC2ADDE95600269869 /* GoogleService-Info.plist */; };
-		DB37DBD02ADDEA6900269869 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBCF2ADDEA6900269869 /* FirebaseAnalytics */; };
-		DB37DBD22ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD12ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion */; };
-		DB37DBD42ADDEA6900269869 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD32ADDEA6900269869 /* FirebaseAnalyticsSwift */; };
-		DB37DBD62ADDEA6900269869 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD52ADDEA6900269869 /* FirebaseAnalyticsWithoutAdIdSupport */; };
-		DB37DBD82ADDEA6900269869 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD72ADDEA6900269869 /* FirebaseAppCheck */; };
-		DB37DBDA2ADDEA6900269869 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBD92ADDEA6900269869 /* FirebaseAppDistribution-Beta */; };
-		DB37DBDC2ADDEA6900269869 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBDB2ADDEA6900269869 /* FirebaseAuth */; };
-		DB37DBDE2ADDEA6900269869 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBDD2ADDEA6900269869 /* FirebaseAuthCombine-Community */; };
-		DB37DBE02ADDEA6900269869 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBDF2ADDEA6900269869 /* FirebaseCrashlytics */; };
-		DB37DBE22ADDEA6900269869 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBE12ADDEA6900269869 /* FirebaseDatabase */; };
-		DB37DBE42ADDEA6900269869 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBE32ADDEA6900269869 /* FirebaseDatabaseSwift */; };
-		DB37DBE62ADDEA6900269869 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBE52ADDEA6900269869 /* FirebaseDynamicLinks */; };
-		DB37DBE82ADDEA6900269869 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBE72ADDEA6900269869 /* FirebaseFirestore */; };
-		DB37DBEA2ADDEA6900269869 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBE92ADDEA6900269869 /* FirebaseFirestoreCombine-Community */; };
-		DB37DBEC2ADDEA6900269869 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBEB2ADDEA6900269869 /* FirebaseFirestoreSwift */; };
-		DB37DBEE2ADDEA6900269869 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBED2ADDEA6900269869 /* FirebaseFunctions */; };
-		DB37DBF02ADDEA6900269869 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBEF2ADDEA6900269869 /* FirebaseFunctionsCombine-Community */; };
-		DB37DBF22ADDEA6900269869 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBF12ADDEA6900269869 /* FirebaseInAppMessaging-Beta */; };
-		DB37DBF42ADDEA6900269869 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBF32ADDEA6900269869 /* FirebaseInAppMessagingSwift-Beta */; };
-		DB37DBF62ADDEA6900269869 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBF52ADDEA6900269869 /* FirebaseInstallations */; };
-		DB37DBF82ADDEA6900269869 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBF72ADDEA6900269869 /* FirebaseMLModelDownloader */; };
-		DB37DBFA2ADDEA6900269869 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBF92ADDEA6900269869 /* FirebaseMessaging */; };
-		DB37DBFC2ADDEA6900269869 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBFB2ADDEA6900269869 /* FirebasePerformance */; };
-		DB37DBFE2ADDEA6900269869 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBFD2ADDEA6900269869 /* FirebaseRemoteConfig */; };
-		DB37DC002ADDEA6900269869 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DBFF2ADDEA6900269869 /* FirebaseRemoteConfigSwift */; };
-		DB37DC022ADDEA6900269869 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DC012ADDEA6900269869 /* FirebaseStorage */; };
-		DB37DC042ADDEA6900269869 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DB37DC032ADDEA6900269869 /* FirebaseStorageCombine-Community */; };
-		DB381C132C1134D7000C6FF0 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB381C122C1134D7000C6FF0 /* CommonTextField.swift */; };
+		DB381C132C1134D7000C6FF0 /* MVDBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB381C122C1134D7000C6FF0 /* MVDBTextField.swift */; };
 		DB55ECDB2ADDFA4900B4DDF8 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */; };
-		DB55ECE02ADDFA7100B4DDF8 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */; };
-		DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */; };
-		DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */; };
-		DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */; };
+		DBB019902AD9CA8700AF1CC6 /* MVDBUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198F2AD9CA8700AF1CC6 /* MVDBUIButton.swift */; };
+		DBB6344A2C9DF8E200E579F7 /* MVDBLobbyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634492C9DF8E200E579F7 /* MVDBLobbyUIView.swift */; };
+		DBB6344C2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */; };
+		DBB6344E2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6344D2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift */; };
+		DBB634502CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6344F2CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift */; };
+		DBB634522CA1D32700E579F7 /* MVDBSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634512CA1D32700E579F7 /* MVDBSignUpEntity.swift */; };
+		DBB634542CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634532CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift */; };
+		DBB634562CA1D33800E579F7 /* MVDBSignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634552CA1D33800E579F7 /* MVDBSignUpProtocols.swift */; };
+		DBB634582CA1D8D100E579F7 /* MVDBSignUpUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634572CA1D8D100E579F7 /* MVDBSignUpUIView.swift */; };
+		DBB6345A2CA1F80A00E579F7 /* UINavController+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634592CA1F80A00E579F7 /* UINavController+Custom.swift */; };
+		DBB634822CA23CBD00E579F7 /* UIProgressView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634812CA23CBC00E579F7 /* UIProgressView+CornerRadius.swift */; };
+		DBBF58AF2C79115500B85959 /* MVDBUINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF58AE2C79115500B85959 /* MVDBUINavigationBar.swift */; };
 		DBC5FD9C2ADDF2FE00A103A9 /* Fonts+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5FD9B2ADDF2FE00A103A9 /* Fonts+Custom.swift */; };
+		DBCF91AB2CA46CAB00A0DD02 /* MVDBHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91AA2CA46CAB00A0DD02 /* MVDBHelpViewController.swift */; };
+		DBCF91AD2CA46CBC00A0DD02 /* MVDBHelpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91AC2CA46CBC00A0DD02 /* MVDBHelpInteractor.swift */; };
+		DBCF91AF2CA46CC600A0DD02 /* MVDBHelpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91AE2CA46CC600A0DD02 /* MVDBHelpPresenter.swift */; };
+		DBCF91B12CA46CCF00A0DD02 /* MVDBHelpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91B02CA46CCF00A0DD02 /* MVDBHelpEntity.swift */; };
+		DBCF91B32CA46CD500A0DD02 /* MVDBHelpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91B22CA46CD500A0DD02 /* MVDBHelpRouter.swift */; };
+		DBCF91B52CA46CDF00A0DD02 /* MVDBHelpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91B42CA46CDF00A0DD02 /* MVDBHelpProtocols.swift */; };
+		DBCF91B82CA46D1800A0DD02 /* MVDBHelpUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91B72CA46D1800A0DD02 /* MVDBHelpUIView.swift */; };
+		DBCF91BB2CA48D7700A0DD02 /* MVDBUIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF91BA2CA48D7700A0DD02 /* MVDBUIAlertController.swift */; };
+		DBE9BF612C9B9A710062290A /* MVDBUIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF602C9B9A710062290A /* MVDBUIProgressView.swift */; };
+		DBE9BF632C9B9E9D0062290A /* MVDBUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF622C9B9E9D0062290A /* MVDBUINavigationController.swift */; };
+		DBE9BF662C9DD4660062290A /* MVDBLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF652C9DD4660062290A /* MVDBLobbyViewController.swift */; };
+		DBE9BF682C9DD47A0062290A /* MVDBLobbyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF672C9DD47A0062290A /* MVDBLobbyInteractor.swift */; };
+		DBE9BF6A2C9DD4830062290A /* MVDBLobbyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF692C9DD4830062290A /* MVDBLobbyPresenter.swift */; };
+		DBE9BF6C2C9DD48A0062290A /* MVDBLobbyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF6B2C9DD48A0062290A /* MVDBLobbyEntity.swift */; };
+		DBE9BF6E2C9DD4940062290A /* MVDBLobbyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF6D2C9DD4940062290A /* MVDBLobbyRouter.swift */; };
+		DBE9BF702C9DD49E0062290A /* MVDBLobbyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE9BF6F2C9DD49E0062290A /* MVDBLobbyProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,11 +94,7 @@
 		DB1709472ACE215100408A66 /* MovieDBFullProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBFullProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB17094B2ACE215100408A66 /* MovieDBFullProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBFullProjectUITests.swift; sourceTree = "<group>"; };
 		DB17094D2ACE215100408A66 /* MovieDBFullProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBFullProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DB1709632ACE255E00408A66 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DB1709652ACE257C00408A66 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-		DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
-		DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProtocols.swift; sourceTree = "<group>"; };
 		DB1709722ACE29BE00408A66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DB1709762ACE32A000408A66 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
 		DB1709772ACE32A000408A66 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
@@ -135,33 +108,41 @@
 		DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+NewFonts.swift"; sourceTree = "<group>"; };
 		DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		DB17098F2ACE375300408A66 /* UIColor+NewColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+NewColors.swift"; sourceTree = "<group>"; };
-		DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpRouter.swift; sourceTree = "<group>"; };
-		DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpInteractor.swift; sourceTree = "<group>"; };
-		DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpPresenter.swift; sourceTree = "<group>"; };
-		DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpRouter.swift; sourceTree = "<group>"; };
-		DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpProtocols.swift; sourceTree = "<group>"; };
 		DB1CF22B2ADE0CBC00175181 /* SignUpFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirebaseService.swift; sourceTree = "<group>"; };
-		DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericUILabel.swift; sourceTree = "<group>"; };
+		DB2D00DF2C137998002D05E1 /* MVDBUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUILabel.swift; sourceTree = "<group>"; };
 		DB35257D2B8FA60C0031DD2F /* SignInEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEntity.swift; sourceTree = "<group>"; };
-		DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpViewController.swift; sourceTree = "<group>"; };
-		DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
-		DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSignUpViewController.swift; sourceTree = "<group>"; };
-		DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignUpViewController.swift; sourceTree = "<group>"; };
-		DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpInteractor.swift; sourceTree = "<group>"; };
-		DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpPresenter.swift; sourceTree = "<group>"; };
-		DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpProtocols.swift; sourceTree = "<group>"; };
-		DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpInteractor.swift; sourceTree = "<group>"; };
-		DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpPresenter.swift; sourceTree = "<group>"; };
-		DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpProtocols.swift; sourceTree = "<group>"; };
-		DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSignUpRouter.swift; sourceTree = "<group>"; };
 		DB37DBCC2ADDE95600269869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DB381C122C1134D7000C6FF0 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		DB381C122C1134D7000C6FF0 /* MVDBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBTextField.swift; sourceTree = "<group>"; };
 		DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
-		DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
-		DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleUIButton.swift; sourceTree = "<group>"; };
-		DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIProgressView.swift; sourceTree = "<group>"; };
-		DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIButton.swift; sourceTree = "<group>"; };
+		DBB0198F2AD9CA8700AF1CC6 /* MVDBUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUIButton.swift; sourceTree = "<group>"; };
+		DBB634492C9DF8E200E579F7 /* MVDBLobbyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyUIView.swift; sourceTree = "<group>"; };
+		DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpNameViewController.swift; sourceTree = "<group>"; };
+		DBB6344D2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpNameInteractor.swift; sourceTree = "<group>"; };
+		DBB6344F2CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpNamePresenter.swift; sourceTree = "<group>"; };
+		DBB634512CA1D32700E579F7 /* MVDBSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpEntity.swift; sourceTree = "<group>"; };
+		DBB634532CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpNameRouter.swift; sourceTree = "<group>"; };
+		DBB634552CA1D33800E579F7 /* MVDBSignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpProtocols.swift; sourceTree = "<group>"; };
+		DBB634572CA1D8D100E579F7 /* MVDBSignUpUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpUIView.swift; sourceTree = "<group>"; };
+		DBB634592CA1F80A00E579F7 /* UINavController+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavController+Custom.swift"; sourceTree = "<group>"; };
+		DBB634812CA23CBC00E579F7 /* UIProgressView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+CornerRadius.swift"; sourceTree = "<group>"; };
+		DBBF58AE2C79115500B85959 /* MVDBUINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUINavigationBar.swift; sourceTree = "<group>"; };
 		DBC5FD9B2ADDF2FE00A103A9 /* Fonts+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Custom.swift"; sourceTree = "<group>"; };
+		DBCF91AA2CA46CAB00A0DD02 /* MVDBHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpViewController.swift; sourceTree = "<group>"; };
+		DBCF91AC2CA46CBC00A0DD02 /* MVDBHelpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpInteractor.swift; sourceTree = "<group>"; };
+		DBCF91AE2CA46CC600A0DD02 /* MVDBHelpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpPresenter.swift; sourceTree = "<group>"; };
+		DBCF91B02CA46CCF00A0DD02 /* MVDBHelpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpEntity.swift; sourceTree = "<group>"; };
+		DBCF91B22CA46CD500A0DD02 /* MVDBHelpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpRouter.swift; sourceTree = "<group>"; };
+		DBCF91B42CA46CDF00A0DD02 /* MVDBHelpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpProtocols.swift; sourceTree = "<group>"; };
+		DBCF91B72CA46D1800A0DD02 /* MVDBHelpUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelpUIView.swift; sourceTree = "<group>"; };
+		DBCF91BA2CA48D7700A0DD02 /* MVDBUIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUIAlertController.swift; sourceTree = "<group>"; };
+		DBE9BF602C9B9A710062290A /* MVDBUIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUIProgressView.swift; sourceTree = "<group>"; };
+		DBE9BF622C9B9E9D0062290A /* MVDBUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUINavigationController.swift; sourceTree = "<group>"; };
+		DBE9BF652C9DD4660062290A /* MVDBLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyViewController.swift; sourceTree = "<group>"; };
+		DBE9BF672C9DD47A0062290A /* MVDBLobbyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyInteractor.swift; sourceTree = "<group>"; };
+		DBE9BF692C9DD4830062290A /* MVDBLobbyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyPresenter.swift; sourceTree = "<group>"; };
+		DBE9BF6B2C9DD48A0062290A /* MVDBLobbyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyEntity.swift; sourceTree = "<group>"; };
+		DBE9BF6D2C9DD4940062290A /* MVDBLobbyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyRouter.swift; sourceTree = "<group>"; };
+		DBE9BF6F2C9DD49E0062290A /* MVDBLobbyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,33 +150,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB37DBE22ADDEA6900269869 /* FirebaseDatabase in Frameworks */,
-				DB37DBF02ADDEA6900269869 /* FirebaseFunctionsCombine-Community in Frameworks */,
-				DB37DBE82ADDEA6900269869 /* FirebaseFirestore in Frameworks */,
-				DB37DBD42ADDEA6900269869 /* FirebaseAnalyticsSwift in Frameworks */,
-				DB37DBD02ADDEA6900269869 /* FirebaseAnalytics in Frameworks */,
-				DB37DBD22ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
-				DB37DBF82ADDEA6900269869 /* FirebaseMLModelDownloader in Frameworks */,
-				DB37DBEC2ADDEA6900269869 /* FirebaseFirestoreSwift in Frameworks */,
-				DB37DBD82ADDEA6900269869 /* FirebaseAppCheck in Frameworks */,
-				DB37DBD62ADDEA6900269869 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
-				DB37DBDC2ADDEA6900269869 /* FirebaseAuth in Frameworks */,
-				DB37DBE02ADDEA6900269869 /* FirebaseCrashlytics in Frameworks */,
-				DB37DC002ADDEA6900269869 /* FirebaseRemoteConfigSwift in Frameworks */,
-				DB37DBF22ADDEA6900269869 /* FirebaseInAppMessaging-Beta in Frameworks */,
-				DB37DBE42ADDEA6900269869 /* FirebaseDatabaseSwift in Frameworks */,
-				DB37DBEE2ADDEA6900269869 /* FirebaseFunctions in Frameworks */,
-				DB37DC042ADDEA6900269869 /* FirebaseStorageCombine-Community in Frameworks */,
-				DB37DBFE2ADDEA6900269869 /* FirebaseRemoteConfig in Frameworks */,
-				DB37DBDA2ADDEA6900269869 /* FirebaseAppDistribution-Beta in Frameworks */,
-				DB37DBDE2ADDEA6900269869 /* FirebaseAuthCombine-Community in Frameworks */,
-				DB37DBFC2ADDEA6900269869 /* FirebasePerformance in Frameworks */,
-				DB37DBF42ADDEA6900269869 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
-				DB37DC022ADDEA6900269869 /* FirebaseStorage in Frameworks */,
-				DB37DBE62ADDEA6900269869 /* FirebaseDynamicLinks in Frameworks */,
-				DB37DBEA2ADDEA6900269869 /* FirebaseFirestoreCombine-Community in Frameworks */,
-				DB37DBFA2ADDEA6900269869 /* FirebaseMessaging in Frameworks */,
-				DB37DBF62ADDEA6900269869 /* FirebaseInstallations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				DB1709622ACE251300408A66 /* UIComponents */,
-				DB1709602ACE249800408A66 /* Protocols */,
 				DB17095F2ACE249200408A66 /* Services */,
 				DB17095E2ACE248D00408A66 /* Common */,
 				DB17095D2ACE248600408A66 /* Extensions */,
@@ -293,9 +246,10 @@
 		DB17095C2ACE248000408A66 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DBCF91A92CA46B8100A0DD02 /* Help */,
+				DBE9BF642C9DD4460062290A /* Lobby */,
 				DB35257C2B8FA5FA0031DD2F /* SignIn */,
 				DBB019882AD9C32D00AF1CC6 /* SignUp */,
-				DB1709612ACE24B200408A66 /* Onboarding */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -305,6 +259,8 @@
 			children = (
 				DB17098A2ACE35A500408A66 /* UIFont+NewFonts.swift */,
 				DB17098D2ACE373000408A66 /* UIColor+HexColor.swift */,
+				DBB634592CA1F80A00E579F7 /* UINavController+Custom.swift */,
+				DBB634812CA23CBC00E579F7 /* UIProgressView+CornerRadius.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,42 +281,18 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		DB1709602ACE249800408A66 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				DB55ECDE2ADDFA6500B4DDF8 /* SignUp */,
-				DB17096F2ACE25B700408A66 /* Onboarding */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		DB1709612ACE24B200408A66 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				DB1709632ACE255E00408A66 /* OnboardingViewController.swift */,
-				DB1709692ACE259D00408A66 /* OnboardingPresenter.swift */,
-				DB17096D2ACE25B100408A66 /* OnboardingRouter.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		DB1709622ACE251300408A66 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DBCF91B92CA48D5A00A0DD02 /* UIAlertController */,
+				DBE9BF5F2C9B9A3E0062290A /* UIProgressView */,
+				DBBF58AD2C79110000B85959 /* UINavController */,
 				DB2D00DE2C13796E002D05E1 /* UILabels */,
 				DB381C112C1133CA000C6FF0 /* UITextFields */,
 				DBB0198A2AD9C39500AF1CC6 /* UIViewControllers */,
 				DBB019892AD9C38900AF1CC6 /* UIButtons */,
 			);
 			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		DB17096F2ACE25B700408A66 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				DB1709702ACE25C500408A66 /* OnboardingProtocols.swift */,
-			);
-			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DB1709742ACE31A000408A66 /* Fonts */ = {
@@ -396,18 +328,6 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		DB1752C92B90F67F0005A535 /* PasswordStep */ = {
-			isa = PBXGroup;
-			children = (
-				DB3525842B8FB5C10031DD2F /* PasswordSignUpViewController.swift */,
-				DB1BFAA32B92357D002328CA /* PasswordSignUpInteractor.swift */,
-				DB1BFAA52B923587002328CA /* PasswordSignUpPresenter.swift */,
-				DB1BFAA72B923590002328CA /* PasswordSignUpRouter.swift */,
-				DB1BFAA92B9235AC002328CA /* PasswordSignUpProtocols.swift */,
-			);
-			path = PasswordStep;
-			sourceTree = "<group>";
-		};
 		DB1CF22A2ADE0C9C00175181 /* LoginFirebaseService */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,7 +339,7 @@
 		DB2D00DE2C13796E002D05E1 /* UILabels */ = {
 			isa = PBXGroup;
 			children = (
-				DB2D00DF2C137998002D05E1 /* GenericUILabel.swift */,
+				DB2D00DF2C137998002D05E1 /* MVDBUILabel.swift */,
 			);
 			path = UILabels;
 			sourceTree = "<group>";
@@ -436,9 +356,6 @@
 			isa = PBXGroup;
 			children = (
 				DB3525862B8FB5DD0031DD2F /* Views */,
-				DB3525892B8FD1840031DD2F /* NameStep */,
-				DB3525902B8FDF1E0031DD2F /* EmailStep */,
-				DB1752C92B90F67F0005A535 /* PasswordStep */,
 			);
 			path = "Multi-Step";
 			sourceTree = "<group>";
@@ -446,49 +363,17 @@
 		DB3525862B8FB5DD0031DD2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DB3525872B8FB6030031DD2F /* BaseSignUpViewController.swift */,
+				DBB634572CA1D8D100E579F7 /* MVDBSignUpUIView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		DB3525892B8FD1840031DD2F /* NameStep */ = {
-			isa = PBXGroup;
-			children = (
-				DB3525802B8FB5A10031DD2F /* NameSignUpViewController.swift */,
-				DB35258A2B8FD1A40031DD2F /* NameSignUpInteractor.swift */,
-				DB35258C2B8FD1B40031DD2F /* NameSignUpPresenter.swift */,
-				DB3525972B8FDF870031DD2F /* NameSignUpRouter.swift */,
-				DB35258E2B8FD1CD0031DD2F /* NameSignUpProtocols.swift */,
-			);
-			path = NameStep;
-			sourceTree = "<group>";
-		};
-		DB3525902B8FDF1E0031DD2F /* EmailStep */ = {
-			isa = PBXGroup;
-			children = (
-				DB3525822B8FB5B10031DD2F /* EmailSignUpViewController.swift */,
-				DB3525912B8FDF380031DD2F /* EmailSignUpInteractor.swift */,
-				DB3525932B8FDF460031DD2F /* EmailSignUpPresenter.swift */,
-				DB1752CA2B90F8460005A535 /* EmailSignUpRouter.swift */,
-				DB3525952B8FDF560031DD2F /* EmailSignUpProtocols.swift */,
-			);
-			path = EmailStep;
 			sourceTree = "<group>";
 		};
 		DB381C112C1133CA000C6FF0 /* UITextFields */ = {
 			isa = PBXGroup;
 			children = (
-				DB381C122C1134D7000C6FF0 /* CommonTextField.swift */,
+				DB381C122C1134D7000C6FF0 /* MVDBTextField.swift */,
 			);
 			path = UITextFields;
-			sourceTree = "<group>";
-		};
-		DB55ECDE2ADDFA6500B4DDF8 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				DB55ECDF2ADDFA7100B4DDF8 /* SignUpProtocols.swift */,
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		DBB019882AD9C32D00AF1CC6 /* SignUp */ = {
@@ -496,6 +381,12 @@
 			children = (
 				DB35257F2B8FB5860031DD2F /* Multi-Step */,
 				DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */,
+				DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */,
+				DBB6344D2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift */,
+				DBB6344F2CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift */,
+				DBB634512CA1D32700E579F7 /* MVDBSignUpEntity.swift */,
+				DBB634532CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift */,
+				DBB634552CA1D33800E579F7 /* MVDBSignUpProtocols.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -503,9 +394,7 @@
 		DBB019892AD9C38900AF1CC6 /* UIButtons */ = {
 			isa = PBXGroup;
 			children = (
-				DBB0198B2AD9C3C100AF1CC6 /* CapsuleUIButton.swift */,
-				DBB0198D2AD9C66100AF1CC6 /* CustomUIProgressView.swift */,
-				DBB0198F2AD9CA8700AF1CC6 /* CommonUIButton.swift */,
+				DBB0198F2AD9CA8700AF1CC6 /* MVDBUIButton.swift */,
 			);
 			path = UIButtons;
 			sourceTree = "<group>";
@@ -516,6 +405,75 @@
 				DB1709652ACE257C00408A66 /* BaseViewController.swift */,
 			);
 			path = UIViewControllers;
+			sourceTree = "<group>";
+		};
+		DBB634482C9DF8C200E579F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBB634492C9DF8E200E579F7 /* MVDBLobbyUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBBF58AD2C79110000B85959 /* UINavController */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF58AE2C79115500B85959 /* MVDBUINavigationBar.swift */,
+				DBE9BF622C9B9E9D0062290A /* MVDBUINavigationController.swift */,
+			);
+			path = UINavController;
+			sourceTree = "<group>";
+		};
+		DBCF91A92CA46B8100A0DD02 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				DBCF91B62CA46D0900A0DD02 /* Views */,
+				DBCF91AA2CA46CAB00A0DD02 /* MVDBHelpViewController.swift */,
+				DBCF91AC2CA46CBC00A0DD02 /* MVDBHelpInteractor.swift */,
+				DBCF91AE2CA46CC600A0DD02 /* MVDBHelpPresenter.swift */,
+				DBCF91B02CA46CCF00A0DD02 /* MVDBHelpEntity.swift */,
+				DBCF91B22CA46CD500A0DD02 /* MVDBHelpRouter.swift */,
+				DBCF91B42CA46CDF00A0DD02 /* MVDBHelpProtocols.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		DBCF91B62CA46D0900A0DD02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBCF91B72CA46D1800A0DD02 /* MVDBHelpUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCF91B92CA48D5A00A0DD02 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				DBCF91BA2CA48D7700A0DD02 /* MVDBUIAlertController.swift */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		DBE9BF5F2C9B9A3E0062290A /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				DBE9BF602C9B9A710062290A /* MVDBUIProgressView.swift */,
+			);
+			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		DBE9BF642C9DD4460062290A /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				DBB634482C9DF8C200E579F7 /* Views */,
+				DBE9BF652C9DD4660062290A /* MVDBLobbyViewController.swift */,
+				DBE9BF672C9DD47A0062290A /* MVDBLobbyInteractor.swift */,
+				DBE9BF692C9DD4830062290A /* MVDBLobbyPresenter.swift */,
+				DBE9BF6B2C9DD48A0062290A /* MVDBLobbyEntity.swift */,
+				DBE9BF6D2C9DD4940062290A /* MVDBLobbyRouter.swift */,
+				DBE9BF6F2C9DD49E0062290A /* MVDBLobbyProtocols.swift */,
+			);
+			path = Lobby;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,33 +493,6 @@
 			);
 			name = MovieDBFullProject;
 			packageProductDependencies = (
-				DB37DBCF2ADDEA6900269869 /* FirebaseAnalytics */,
-				DB37DBD12ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion */,
-				DB37DBD32ADDEA6900269869 /* FirebaseAnalyticsSwift */,
-				DB37DBD52ADDEA6900269869 /* FirebaseAnalyticsWithoutAdIdSupport */,
-				DB37DBD72ADDEA6900269869 /* FirebaseAppCheck */,
-				DB37DBD92ADDEA6900269869 /* FirebaseAppDistribution-Beta */,
-				DB37DBDB2ADDEA6900269869 /* FirebaseAuth */,
-				DB37DBDD2ADDEA6900269869 /* FirebaseAuthCombine-Community */,
-				DB37DBDF2ADDEA6900269869 /* FirebaseCrashlytics */,
-				DB37DBE12ADDEA6900269869 /* FirebaseDatabase */,
-				DB37DBE32ADDEA6900269869 /* FirebaseDatabaseSwift */,
-				DB37DBE52ADDEA6900269869 /* FirebaseDynamicLinks */,
-				DB37DBE72ADDEA6900269869 /* FirebaseFirestore */,
-				DB37DBE92ADDEA6900269869 /* FirebaseFirestoreCombine-Community */,
-				DB37DBEB2ADDEA6900269869 /* FirebaseFirestoreSwift */,
-				DB37DBED2ADDEA6900269869 /* FirebaseFunctions */,
-				DB37DBEF2ADDEA6900269869 /* FirebaseFunctionsCombine-Community */,
-				DB37DBF12ADDEA6900269869 /* FirebaseInAppMessaging-Beta */,
-				DB37DBF32ADDEA6900269869 /* FirebaseInAppMessagingSwift-Beta */,
-				DB37DBF52ADDEA6900269869 /* FirebaseInstallations */,
-				DB37DBF72ADDEA6900269869 /* FirebaseMLModelDownloader */,
-				DB37DBF92ADDEA6900269869 /* FirebaseMessaging */,
-				DB37DBFB2ADDEA6900269869 /* FirebasePerformance */,
-				DB37DBFD2ADDEA6900269869 /* FirebaseRemoteConfig */,
-				DB37DBFF2ADDEA6900269869 /* FirebaseRemoteConfigSwift */,
-				DB37DC012ADDEA6900269869 /* FirebaseStorage */,
-				DB37DC032ADDEA6900269869 /* FirebaseStorageCombine-Community */,
 			);
 			productName = MovieDBFullProject;
 			productReference = DB1709272ACE214E00408A66 /* MovieDBFullProject.app */;
@@ -690,43 +621,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB35258F2B8FD1CD0031DD2F /* NameSignUpProtocols.swift in Sources */,
+				DBE9BF682C9DD47A0062290A /* MVDBLobbyInteractor.swift in Sources */,
 				DB35257E2B8FA60C0031DD2F /* SignInEntity.swift in Sources */,
-				DB35258B2B8FD1A40031DD2F /* NameSignUpInteractor.swift in Sources */,
-				DB3525852B8FB5C10031DD2F /* PasswordSignUpViewController.swift in Sources */,
-				DB1709712ACE25C500408A66 /* OnboardingProtocols.swift in Sources */,
+				DBE9BF632C9B9E9D0062290A /* MVDBUINavigationController.swift in Sources */,
+				DBCF91AB2CA46CAB00A0DD02 /* MVDBHelpViewController.swift in Sources */,
+				DBCF91AF2CA46CC600A0DD02 /* MVDBHelpPresenter.swift in Sources */,
+				DBB6344C2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift in Sources */,
 				DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */,
-				DB381C132C1134D7000C6FF0 /* CommonTextField.swift in Sources */,
-				DBB0198E2AD9C66100AF1CC6 /* CustomUIProgressView.swift in Sources */,
+				DB381C132C1134D7000C6FF0 /* MVDBTextField.swift in Sources */,
 				DB17092B2ACE214E00408A66 /* AppDelegate.swift in Sources */,
-				DB3525882B8FB6030031DD2F /* BaseSignUpViewController.swift in Sources */,
-				DB3525942B8FDF460031DD2F /* EmailSignUpPresenter.swift in Sources */,
-				DB3525812B8FB5A10031DD2F /* NameSignUpViewController.swift in Sources */,
-				DB1BFAA82B923590002328CA /* PasswordSignUpRouter.swift in Sources */,
+				DBB634502CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift in Sources */,
+				DBB634582CA1D8D100E579F7 /* MVDBSignUpUIView.swift in Sources */,
+				DBB6345A2CA1F80A00E579F7 /* UINavController+Custom.swift in Sources */,
+				DBE9BF6E2C9DD4940062290A /* MVDBLobbyRouter.swift in Sources */,
+				DBB6344A2C9DF8E200E579F7 /* MVDBLobbyUIView.swift in Sources */,
+				DBB6344E2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift in Sources */,
 				DB1709662ACE257C00408A66 /* BaseViewController.swift in Sources */,
-				DB55ECE02ADDFA7100B4DDF8 /* SignUpProtocols.swift in Sources */,
-				DB3525982B8FDF870031DD2F /* NameSignUpRouter.swift in Sources */,
-				DB2D00E02C137998002D05E1 /* GenericUILabel.swift in Sources */,
-				DB3525922B8FDF380031DD2F /* EmailSignUpInteractor.swift in Sources */,
-				DB1709642ACE255E00408A66 /* OnboardingViewController.swift in Sources */,
-				DB1BFAAA2B9235AC002328CA /* PasswordSignUpProtocols.swift in Sources */,
+				DBCF91AD2CA46CBC00A0DD02 /* MVDBHelpInteractor.swift in Sources */,
+				DB2D00E02C137998002D05E1 /* MVDBUILabel.swift in Sources */,
 				DBC5FD9C2ADDF2FE00A103A9 /* Fonts+Custom.swift in Sources */,
-				DB35258D2B8FD1B40031DD2F /* NameSignUpPresenter.swift in Sources */,
-				DB3525962B8FDF560031DD2F /* EmailSignUpProtocols.swift in Sources */,
 				DB55ECDB2ADDFA4900B4DDF8 /* SignUpEntity.swift in Sources */,
-				DB17096A2ACE259D00408A66 /* OnboardingPresenter.swift in Sources */,
+				DBE9BF6A2C9DD4830062290A /* MVDBLobbyPresenter.swift in Sources */,
 				DB1709732ACE29BE00408A66 /* Constants.swift in Sources */,
-				DBB019902AD9CA8700AF1CC6 /* CommonUIButton.swift in Sources */,
-				DBB0198C2AD9C3C100AF1CC6 /* CapsuleUIButton.swift in Sources */,
+				DBB634562CA1D33800E579F7 /* MVDBSignUpProtocols.swift in Sources */,
+				DBB019902AD9CA8700AF1CC6 /* MVDBUIButton.swift in Sources */,
+				DBCF91B52CA46CDF00A0DD02 /* MVDBHelpProtocols.swift in Sources */,
+				DBCF91B32CA46CD500A0DD02 /* MVDBHelpRouter.swift in Sources */,
+				DBB634522CA1D32700E579F7 /* MVDBSignUpEntity.swift in Sources */,
+				DBE9BF6C2C9DD48A0062290A /* MVDBLobbyEntity.swift in Sources */,
+				DBCF91B82CA46D1800A0DD02 /* MVDBHelpUIView.swift in Sources */,
 				DB1CF22C2ADE0CBC00175181 /* SignUpFirebaseService.swift in Sources */,
-				DB1BFAA62B923587002328CA /* PasswordSignUpPresenter.swift in Sources */,
-				DB3525832B8FB5B10031DD2F /* EmailSignUpViewController.swift in Sources */,
+				DBE9BF702C9DD49E0062290A /* MVDBLobbyProtocols.swift in Sources */,
+				DBE9BF612C9B9A710062290A /* MVDBUIProgressView.swift in Sources */,
 				DB17092D2ACE214E00408A66 /* SceneDelegate.swift in Sources */,
+				DBBF58AF2C79115500B85959 /* MVDBUINavigationBar.swift in Sources */,
+				DBCF91B12CA46CCF00A0DD02 /* MVDBHelpEntity.swift in Sources */,
 				DB1709902ACE375300408A66 /* UIColor+NewColors.swift in Sources */,
-				DB17096E2ACE25B100408A66 /* OnboardingRouter.swift in Sources */,
-				DB1BFAA42B92357E002328CA /* PasswordSignUpInteractor.swift in Sources */,
-				DB1752CB2B90F8460005A535 /* EmailSignUpRouter.swift in Sources */,
+				DBB634822CA23CBD00E579F7 /* UIProgressView+CornerRadius.swift in Sources */,
+				DBE9BF662C9DD4660062290A /* MVDBLobbyViewController.swift in Sources */,
 				DB17098B2ACE35A500408A66 /* UIFont+NewFonts.swift in Sources */,
+				DBCF91BB2CA48D7700A0DD02 /* MVDBUIAlertController.swift in Sources */,
+				DBB634542CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,144 +1017,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DB37DBCF2ADDEA6900269869 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		DB37DBD12ADDEA6900269869 /* FirebaseAnalyticsOnDeviceConversion */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsOnDeviceConversion;
-		};
-		DB37DBD32ADDEA6900269869 /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
-		DB37DBD52ADDEA6900269869 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsWithoutAdIdSupport;
-		};
-		DB37DBD72ADDEA6900269869 /* FirebaseAppCheck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
-		};
-		DB37DBD92ADDEA6900269869 /* FirebaseAppDistribution-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAppDistribution-Beta";
-		};
-		DB37DBDB2ADDEA6900269869 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		DB37DBDD2ADDEA6900269869 /* FirebaseAuthCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseAuthCombine-Community";
-		};
-		DB37DBDF2ADDEA6900269869 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		DB37DBE12ADDEA6900269869 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		DB37DBE32ADDEA6900269869 /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
-		DB37DBE52ADDEA6900269869 /* FirebaseDynamicLinks */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDynamicLinks;
-		};
-		DB37DBE72ADDEA6900269869 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		DB37DBE92ADDEA6900269869 /* FirebaseFirestoreCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
-		};
-		DB37DBEB2ADDEA6900269869 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		DB37DBED2ADDEA6900269869 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		DB37DBEF2ADDEA6900269869 /* FirebaseFunctionsCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFunctionsCombine-Community";
-		};
-		DB37DBF12ADDEA6900269869 /* FirebaseInAppMessaging-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseInAppMessaging-Beta";
-		};
-		DB37DBF32ADDEA6900269869 /* FirebaseInAppMessagingSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseInAppMessagingSwift-Beta";
-		};
-		DB37DBF52ADDEA6900269869 /* FirebaseInstallations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseInstallations;
-		};
-		DB37DBF72ADDEA6900269869 /* FirebaseMLModelDownloader */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMLModelDownloader;
-		};
-		DB37DBF92ADDEA6900269869 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
-		DB37DBFB2ADDEA6900269869 /* FirebasePerformance */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebasePerformance;
-		};
-		DB37DBFD2ADDEA6900269869 /* FirebaseRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfig;
-		};
-		DB37DBFF2ADDEA6900269869 /* FirebaseRemoteConfigSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfigSwift;
-		};
-		DB37DC012ADDEA6900269869 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		DB37DC032ADDEA6900269869 /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB37DBCE2ADDEA6900269869 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB17091F2ACE214E00408A66 /* Project object */;
 }
