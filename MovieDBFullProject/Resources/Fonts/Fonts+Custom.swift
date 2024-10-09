@@ -34,12 +34,17 @@ extension UIFont {
 //    }
     
     static var systemBold36: UIFont {
-    let font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        let font = UIFont.systemFont(ofSize: 36, weight: .bold)
         return font
     }
     
     static var systemMedium16: UIFont {
-    let font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        let font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        return font
+    }
+    
+    static var systemMedium12: UIFont {
+        let font = UIFont.systemFont(ofSize: 12, weight: .medium)
         return font
     }
     
