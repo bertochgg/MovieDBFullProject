@@ -9,10 +9,17 @@ import UIKit
 
 final class MVDBTextField: UITextField {
     
-    private var isImageNeeded: Bool
+    enum IconSide {
+        case left
+        case right
+    }
     
-    init(isImageNeeded: Bool = false) {
+    private var isImageNeeded: Bool
+    private var isSecure: Bool
+    
+    init(isImageNeeded: Bool = false, isSecure: Bool = false) {
         self.isImageNeeded = isImageNeeded
+        self.isSecure = isSecure
         super.init(frame: .zero)
         setupTextField()
     }
@@ -29,7 +36,8 @@ final class MVDBTextField: UITextField {
         layer.borderColor = UIColor.steelGray.cgColor
         layer.cornerRadius = 8
         attributedPlaceholder = NSAttributedString(string: placeholder ?? "Placeholder", attributes: [NSAttributedString.Key.foregroundColor: UIColor.stormySky])
-        isImageNeeded ? addLeftIcon(image: UIImage(systemName: "magnifyingglass")) : paddingLeftForTextOnly()
+        isImageNeeded ? addIconOnTextField(image: UIImage(systemName: "magnifyingglass"), side: .left) : paddingLeftForTextOnly()
+        isSecureTextEntry = isSecure
     }
     
     private func paddingLeftForTextOnly() {
@@ -38,16 +46,29 @@ final class MVDBTextField: UITextField {
         leftViewMode = .always
     }
     
-    private func addLeftIcon(image: UIImage?) {
+    func addIconOnTextField(image: UIImage?, side: IconSide, selector: Selector? = nil, target: UIView? = nil) {
         guard let image = image else { return }
-        let iconView = UIImageView(frame: CGRect(x: 16, y: 0, width: 20, height: 20))
+        let xPosition: Int = side == .right ? 4 : 16
+        let iconSize: Int = side == .right ? 30 : 20
+        let iconView = UIImageView(frame: CGRect(x: xPosition, y: 0, width: iconSize, height: iconSize))
         iconView.image = image
         iconView.contentMode = .scaleAspectFit
         iconView.tintColor = .frostedPearl
         let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: frame.size.height))
         containerView.addSubview(iconView)
         iconView.center.y = containerView.center.y
-        leftView = containerView
-        leftViewMode = .always
+        switch side {
+        case .left:
+            leftView = containerView
+            leftViewMode = .always
+        case .right:
+            rightView = containerView
+            rightViewMode = .always
+            rightView?.isUserInteractionEnabled = side == .right
+            containerView.isUserInteractionEnabled = side == .right
+            iconView.isUserInteractionEnabled = side == .right
+            let tapGesture = UITapGestureRecognizer(target: target, action: selector)
+            rightView?.addGestureRecognizer(tapGesture)
+        }
     }
 }
