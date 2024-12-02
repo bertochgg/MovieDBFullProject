@@ -29,7 +29,7 @@ struct MVDBSignUpPasswordEntity {
     let title: String = "Create your password"
     let description: String = "Create your password to continue to create your account"
     let firstTextFieldPlaceholder: String = "Create your password"
-    let secondTextFieldPlaceholder: String = "Confirm youe password"
+    let secondTextFieldPlaceholder: String = "Confirm your password"
     let termsText: String = "By loging in or signing up you agree to Foodlam’s Terms and Condition & Privacy Policies"
 }
 
