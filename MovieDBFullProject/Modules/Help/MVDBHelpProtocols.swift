@@ -10,6 +10,7 @@ import UIKit
 // MARK: - UIView
 protocol MVDBHelpUIViewDelegate: AnyObject {
     func didTapCallCustomerServiceButton()
+    func didTapDismissHelpView()
 }
 
 // MARK: - View -> Presenter Input
@@ -17,6 +18,7 @@ protocol MVDBHelpPresenterInputProtocol: AnyObject {
     var view: MVDBHelpPresenterOutputProtocol? { get set }
     func viewDidLoad()
     func callCustomerService()
+    func dismissHelpView()
     func goBack()
 }
 
@@ -42,5 +44,6 @@ protocol MVDBHelpRouterProtocol: AnyObject {
     static func createHelpModule() -> UIViewController
     func popView(view: MVDBHelpPresenterOutputProtocol?)
     func presentAlert(from view: MVDBHelpPresenterOutputProtocol?, to alertToPresent: UIViewController)
+    func dismissView(view: MVDBHelpPresenterOutputProtocol?) 
 }
 

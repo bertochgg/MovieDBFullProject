@@ -20,7 +20,18 @@ final class MVDBHelpUIView: UIView {
     private lazy var titleLabel = MVDBUILabel(style: .h1, weight: .bold)
     private lazy var descriptionLabel = MVDBUILabel(style: .h3, weight: .medium, textAlignment: .center, textColor: .slateMist)
     private lazy var callCustomerServiceButton = MVDBUIButton(textColor: .midnightShadow, backgroundColor: .frostedPearl)
-    private lazy var views: [UIView] = [backgroundImageView, titleLabel, descriptionLabel, callCustomerServiceButton]
+    private lazy var closeImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "xmark")
+        imageView.contentMode = .scaleAspectFill
+        imageView.tintColor = .frostedPearl
+        let tapDismissAction: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissHelpView))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tapDismissAction)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    private lazy var views: [UIView] = [backgroundImageView, titleLabel, closeImageView, descriptionLabel, callCustomerServiceButton]
 
     init() {
         super.init(frame: .zero)
@@ -48,6 +59,10 @@ final class MVDBHelpUIView: UIView {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
+            closeImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
+            closeImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            closeImageView.heightAnchor.constraint(equalToConstant: 25),
+            closeImageView.widthAnchor.constraint(equalToConstant: 25),
             
             titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
             titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
@@ -67,12 +82,16 @@ final class MVDBHelpUIView: UIView {
             callCustomerServiceButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             callCustomerServiceButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             callCustomerServiceButton.heightAnchor.constraint(equalToConstant: 43)
-            
         ])
     }
     
     @objc
     private func callCustomerServiceButtonTapped() {
         delegate?.didTapCallCustomerServiceButton()
+    }
+    
+    @objc
+    private func dissmissHelpView() {
+        delegate?.didTapDismissHelpView()
     }
 }

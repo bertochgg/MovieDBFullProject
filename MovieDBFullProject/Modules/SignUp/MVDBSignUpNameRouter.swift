@@ -36,6 +36,12 @@ final class MVDBSignUpNameRouter: MVDBSignUpRouterProtocol {
         view.navigationController?.pushViewController(viewToPresent, animated: true)
     }
     
+    func presentViewModally(from view: MVDBSignUpPresenterOutputProtocol?, to viewToPresent: UIViewController) {
+        guard let view = view as? UIViewController else { return }
+        view.modalPresentationStyle = .pageSheet
+        view.present(viewToPresent, animated: true)
+    }
+    
     func presentView(from view: MVDBSignUpPresenterOutputProtocol?, to viewToPresent: UIViewController) {
         guard let view = view as? UIViewController else { return }
         view.present(viewToPresent, animated: true)

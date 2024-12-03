@@ -25,7 +25,7 @@ protocol MVDBSignUpPresenterInputProtocol: AnyObject {
 
 // MARK: - Presenter -> View
 protocol MVDBSignUpPresenterOutputProtocol: AnyObject {
-    func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep)
+    func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep, target: Any, selectorForAction: Selector)
 }
 
 // MARK: - Presenter -> Interactor
@@ -48,5 +48,6 @@ protocol MVDBSignUpRouterProtocol: AnyObject {
     static func createSignUpModule(for signUpStep: SignUpStep) -> UIViewController
     func popView(view: MVDBSignUpPresenterOutputProtocol?, toSignUpStep: SignUpStep)
     func pushView(from view: MVDBSignUpPresenterOutputProtocol?, to viewToPresent: UIViewController)
+    func presentViewModally(from view: MVDBSignUpPresenterOutputProtocol?, to viewToPresent: UIViewController)
     func presentView(from view: MVDBSignUpPresenterOutputProtocol?, to viewToPresent: UIViewController)
 }

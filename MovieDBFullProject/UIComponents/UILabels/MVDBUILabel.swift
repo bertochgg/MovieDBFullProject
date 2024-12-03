@@ -13,6 +13,8 @@ final class MVDBUILabel: UILabel {
         case h1
         case h2
         case h3
+        case h4
+        case h5
     }
     
     init(style: TitleStyle, weight: UIFont.Weight, textAlignment: NSTextAlignment = .left, textColor: UIColor = .frostedPearl) {
@@ -40,6 +42,10 @@ final class MVDBUILabel: UILabel {
         case .h3:
             font = .systemFont(ofSize: 16, weight: weight)
             self.numberOfLines = 0
+        case .h4:
+            font = .systemFont(ofSize: 10, weight: weight)
+        case .h5:
+            font = .systemFont(ofSize: 6, weight: weight)
         }
     }
 }

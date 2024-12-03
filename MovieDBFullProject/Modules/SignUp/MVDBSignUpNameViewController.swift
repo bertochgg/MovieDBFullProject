@@ -55,13 +55,15 @@ final class MVDBSignUpNameViewController: UIViewController {
 }
 
 extension MVDBSignUpNameViewController: MVDBSignUpPresenterOutputProtocol {
-    func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep) {
+    func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep, target: Any, selectorForAction: Selector) {
         mainView?.configure(titleText: screenTitle,
                             descriptionText: screenDescription,
                             termsText: termsText,
                             placeholderText: textFieldPlaceholder.first ?? "",
                             secondPlaceholderText: textFieldPlaceholder.last ?? "",
-                            signUpStep: signUpStep)
+                            signUpStep: signUpStep,
+                            target: target,
+                            selector: selectorForAction)
     }
 }
 

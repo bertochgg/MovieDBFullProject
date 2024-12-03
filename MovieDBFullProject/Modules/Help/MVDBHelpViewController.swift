@@ -53,4 +53,8 @@ extension MVDBHelpViewController: MVDBHelpUIViewDelegate {
     func didTapCallCustomerServiceButton() {
         presenter.callCustomerService()
     }
+    
+    func didTapDismissHelpView() {
+        presenter.dismissHelpView()
+    }
 }
