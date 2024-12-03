@@ -32,4 +32,9 @@ final class MVDBHelpRouter: MVDBHelpRouterProtocol {
         guard let view = view as? UIViewController else { return }
         view.present(alertToPresent, animated: true)
     }
+    
+    func dismissView(view: MVDBHelpPresenterOutputProtocol?) {
+        guard let view = view as? UIViewController else { return }
+        view.dismiss(animated: true)
+    }
 }

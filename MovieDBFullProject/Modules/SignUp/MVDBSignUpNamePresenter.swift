@@ -57,15 +57,24 @@ final class MVDBSignUpNamePresenter: MVDBSignUpPresenterInputProtocol {
         let helpModule = MVDBHelpRouter.createHelpModule()
         router.presentView(from: view, to: helpModule)
     }
+    
+    @objc // Example of how to pass reference of target and selector between VIPER modules
+    private func showPasswordHelperModal() {
+//        let helperModal = MVDBHelperModalRouter.createHelperModule()
+//        router.presentViewModally(from: view, to: helperModal)
+    }
 }
 
 extension MVDBSignUpNamePresenter: MVDBSignUpInteractorOutputProtocol {
     func didObtainCopiesForView(with copies: (title: String, description: String, textFieldPlaceholder: [String], termsText: String), and signUpStep: SignUpStep) {
         self.signUpStep = signUpStep
+        let selector: Selector = #selector(showPasswordHelperModal)
         view?.displayCopiesForView(screenTitle: copies.title,
                                    screenDescription: copies.description,
                                    textFieldPlaceholder: copies.textFieldPlaceholder,
                                    termsText: copies.termsText,
-                                   signUpStep: signUpStep)
+                                   signUpStep: signUpStep, 
+                                   target: self,
+                                   selectorForAction: selector)
     }
 }

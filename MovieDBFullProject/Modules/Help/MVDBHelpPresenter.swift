@@ -26,6 +26,10 @@ final class MVDBHelpPresenter: MVDBHelpPresenterInputProtocol {
         router.presentAlert(from: view, to: callAlert)
     }
     
+    func dismissHelpView() {
+        router.dismissView(view: view)
+    }
+    
     func goBack() {
         router.popView(view: view)
     }

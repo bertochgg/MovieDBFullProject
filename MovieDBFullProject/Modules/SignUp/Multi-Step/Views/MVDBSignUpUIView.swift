@@ -21,7 +21,8 @@ final class MVDBSignUpUIView: UIView {
     private lazy var secondErrorLabel: MVDBUILabel = MVDBUILabel(style: .h3, weight: .regular, textColor: .red)
     private lazy var termsLabel: MVDBUILabel = MVDBUILabel(style: .h3, weight: .regular, textAlignment: .natural, textColor: .slateMist)
     private lazy var continueButton: MVDBUIButton = MVDBUIButton()
-    private lazy var views: [UIView] = [titleLabel, helperForPasswordImageView, descriptionLabel, firstDataTextField, secondDataTextField, termsLabel, continueButton, firstErrorLabel, secondErrorLabel]
+    private lazy var helperModalView = MVDBHelperModalUIView()
+    private lazy var views: [UIView] = [titleLabel, helperForPasswordImageView, descriptionLabel, firstDataTextField, secondDataTextField, termsLabel, continueButton, firstErrorLabel, secondErrorLabel, helperModalView]
     
     private var secondDataTextFieldWithFirstErrorConstraint: NSLayoutConstraint?
     private var secondDataTextFieldWithoutFirstErrorConstraint: NSLayoutConstraint?
@@ -39,7 +40,7 @@ final class MVDBSignUpUIView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(titleText: String, descriptionText: String, termsText: String, placeholderText: String, secondPlaceholderText: String? = nil, signUpStep: SignUpStep = .name) {
+    func configure(titleText: String, descriptionText: String, termsText: String, placeholderText: String, secondPlaceholderText: String? = nil, signUpStep: SignUpStep = .name, target: Any? = nil, selector: Selector? = nil) {
         self.signUpStep = signUpStep
         titleLabel.text = titleText
         descriptionLabel.text = descriptionText
@@ -74,6 +75,12 @@ final class MVDBSignUpUIView: UIView {
         helperForPasswordImageView.translatesAutoresizingMaskIntoConstraints = false
         helperForPasswordImageView.tintColor = .systemBlue
         helperForPasswordImageView.isHidden = true
+        helperModalView.translatesAutoresizingMaskIntoConstraints = false
+        helperModalView.layer.cornerRadius = 8
+        helperModalView.layer.borderColor = UIColor.frostedPearl.cgColor
+        helperModalView.layer.borderWidth = 1
+        helperModalView.isHidden = true
+        self.bringSubviewToFront(helperModalView)
         views.forEach { view in addSubview(view) }
         titleLabel.numberOfLines = 0
         descriptionLabel.numberOfLines = 0
@@ -92,6 +99,11 @@ final class MVDBSignUpUIView: UIView {
             helperForPasswordImageView.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 16),
             helperForPasswordImageView.heightAnchor.constraint(equalToConstant: 30),
             helperForPasswordImageView.widthAnchor.constraint(equalToConstant: 30),
+            
+            helperModalView.topAnchor.constraint(equalTo: helperForPasswordImageView.bottomAnchor, constant: -2),
+            helperModalView.trailingAnchor.constraint(equalTo: helperForPasswordImageView.leadingAnchor, constant: 10),
+            helperModalView.heightAnchor.constraint(equalToConstant: 220),
+            helperModalView.widthAnchor.constraint(equalToConstant: 160),
             
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
             descriptionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
@@ -239,8 +251,28 @@ final class MVDBSignUpUIView: UIView {
         secondDataTextField.addIconOnTextField(image: iconImage, side: .right, selector: #selector(showPasswordSecondTextField), target: self)
     }
     
-    @objc private func showPasswordHelperInstructions() {
-        
+    @objc
+    private func showPasswordHelperInstructions() {
+        let isHidden = helperModalView.isHidden
+        if isHidden {
+            helperModalView.alpha = 0.0
+            helperModalView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            helperModalView.isHidden = false
+        }
+        UIView.animate(
+            withDuration: 0.3,
+            delay: 0,
+            options: [.curveEaseInOut],
+            animations: {
+                self.helperModalView.alpha = isHidden ? 1.0 : 0.0
+                self.helperModalView.transform = isHidden ? .identity : CGAffineTransform(scaleX: 0.8, y: 0.8)
+            },
+            completion: { _ in
+                if !isHidden {
+                    self.helperModalView.isHidden = true
+                }
+            }
+        )
     }
 }
 
