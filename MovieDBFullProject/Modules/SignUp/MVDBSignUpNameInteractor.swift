@@ -32,11 +32,13 @@ final class MVDBSignUpNameInteractor: MVDBSignUpInteractorInputProtocol {
         }
     }
     
-    func proceedToNextStep(currentStep: SignUpStep) -> SignUpStep {
+    func proceedToNextStep(currentStep: SignUpStep) -> SignUpStep? {
         switch currentStep {
         case .name: return .email
         case .email: return .password
-        case .password: return .password
+        case .password:
+            executeSignUpService()
+            return nil
         }
     }
     
@@ -45,6 +47,28 @@ final class MVDBSignUpNameInteractor: MVDBSignUpInteractorInputProtocol {
         case .password: return .email
         case .email: return .name
         case .name: return .name
+        }
+    }
+    
+    func proceedToNextStepWithData(data: String, currentStep: SignUpStep) {
+        switch currentStep {
+        case .name:
+            SignUpEntity.shared.firstName = data
+        case .email:
+            SignUpEntity.shared.email = data
+        case .password:
+            SignUpEntity.shared.password = data
+        }
+    }
+    
+    func proceedToPreviousStepDeletingData(currentStep: SignUpStep) {
+        switch currentStep {
+        case .name:
+            SignUpEntity.shared.firstName = nil
+        case .email:
+            SignUpEntity.shared.email = nil
+        case .password:
+            SignUpEntity.shared.password = nil
         }
     }
     
@@ -59,6 +83,23 @@ final class MVDBSignUpNameInteractor: MVDBSignUpInteractorInputProtocol {
         }
     }
     
+    private func executeSignUpService() {
+        print("service executing...")
+    }
+    
+    private func encodeSignUp() -> Data? {
+        let signUpData: SignUpEntity = SignUpEntity.shared
+        let jsonEncoder = JSONEncoder()
+        do {
+            let jsonData = try jsonEncoder.encode(signUpData)
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                print("JSON String: \(jsonString)") // Borrar
+            }
+            return jsonData
+        } catch {
+            return nil // handle error
+        }
+    }
     
     private func getCopiesForNameStep() {
         let nameStepViewCopies = (title: signUpNameEntity.title,

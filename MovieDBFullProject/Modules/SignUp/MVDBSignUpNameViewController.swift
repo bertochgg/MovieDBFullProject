@@ -35,6 +35,9 @@ final class MVDBSignUpNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+        print("name: \(SignUpEntity.shared.firstName)")
+        print("email: \(SignUpEntity.shared.email)")
+        print("password: \(SignUpEntity.shared.password)")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,7 +71,7 @@ extension MVDBSignUpNameViewController: MVDBSignUpPresenterOutputProtocol {
 }
 
 extension MVDBSignUpNameViewController: MVDBSignUpNameUIViewDelegate {
-    func didTapNextViewButton() {
-        presenter.initializeNextStep()
+    func didTapNextViewButton(with data: String) {
+        presenter.initializeNextStep(with: data)
     }
 }

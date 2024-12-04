@@ -7,11 +7,10 @@
 
 import Foundation
 
-final class SignUpEntity {
+final class SignUpEntity: Codable {
     static let shared = SignUpEntity()
     
     var firstName: String?
-    var lastName: String?
     var email: String?
     var password: String?
     

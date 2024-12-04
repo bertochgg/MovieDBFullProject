@@ -36,6 +36,7 @@
 		DB381C132C1134D7000C6FF0 /* MVDBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB381C122C1134D7000C6FF0 /* MVDBTextField.swift */; };
 		DB55ECDB2ADDFA4900B4DDF8 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */; };
 		DB694C152CFE3026007366E7 /* MVDBHelperModalUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB694C142CFE3026007366E7 /* MVDBHelperModalUIView.swift */; };
+		DB694C172CFE99B2007366E7 /* MVDBSignUpRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB694C162CFE99B2007366E7 /* MVDBSignUpRemoteDataManager.swift */; };
 		DBB019902AD9CA8700AF1CC6 /* MVDBUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0198F2AD9CA8700AF1CC6 /* MVDBUIButton.swift */; };
 		DBB6344A2C9DF8E200E579F7 /* MVDBLobbyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB634492C9DF8E200E579F7 /* MVDBLobbyUIView.swift */; };
 		DBB6344C2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */; };
@@ -118,6 +119,7 @@
 		DB381C122C1134D7000C6FF0 /* MVDBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBTextField.swift; sourceTree = "<group>"; };
 		DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
 		DB694C142CFE3026007366E7 /* MVDBHelperModalUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBHelperModalUIView.swift; sourceTree = "<group>"; };
+		DB694C162CFE99B2007366E7 /* MVDBSignUpRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpRemoteDataManager.swift; sourceTree = "<group>"; };
 		DBB0198F2AD9CA8700AF1CC6 /* MVDBUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBUIButton.swift; sourceTree = "<group>"; };
 		DBB634492C9DF8E200E579F7 /* MVDBLobbyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBLobbyUIView.swift; sourceTree = "<group>"; };
 		DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDBSignUpNameViewController.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				DB55ECDA2ADDFA4900B4DDF8 /* SignUpEntity.swift */,
 				DBB6344B2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift */,
 				DBB6344D2CA1D31700E579F7 /* MVDBSignUpNameInteractor.swift */,
+				DB694C162CFE99B2007366E7 /* MVDBSignUpRemoteDataManager.swift */,
 				DBB6344F2CA1D32000E579F7 /* MVDBSignUpNamePresenter.swift */,
 				DBB634512CA1D32700E579F7 /* MVDBSignUpEntity.swift */,
 				DBB634532CA1D32F00E579F7 /* MVDBSignUpNameRouter.swift */,
@@ -647,6 +650,7 @@
 				DB35257E2B8FA60C0031DD2F /* SignInEntity.swift in Sources */,
 				DBE9BF632C9B9E9D0062290A /* MVDBUINavigationController.swift in Sources */,
 				DBCF91AB2CA46CAB00A0DD02 /* MVDBHelpViewController.swift in Sources */,
+				DB694C172CFE99B2007366E7 /* MVDBSignUpRemoteDataManager.swift in Sources */,
 				DBCF91AF2CA46CC600A0DD02 /* MVDBHelpPresenter.swift in Sources */,
 				DBB6344C2CA1D2F900E579F7 /* MVDBSignUpNameViewController.swift in Sources */,
 				DB17098E2ACE373000408A66 /* UIColor+HexColor.swift in Sources */,
