@@ -231,7 +231,7 @@ final class MVDBSignUpUIView: UIView {
         let isValidSecondText = signUpStep == .password ? validate(textField: secondDataTextField, errorLabel: secondErrorLabel) : true
         
         if isValidFirstText && isValidSecondText {
-            delegate?.didTapNextViewButton()
+            delegate?.didTapNextViewButton(with: firstDataTextField.text ?? "")
         }
     }
     

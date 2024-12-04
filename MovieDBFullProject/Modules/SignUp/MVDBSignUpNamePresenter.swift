@@ -40,9 +40,10 @@ final class MVDBSignUpNamePresenter: MVDBSignUpPresenterInputProtocol {
         self.signUpStep = previousStep
     }
     
-    func initializeNextStep() {
-        guard let signUpStep = signUpStep else { return }
-        let currentStep = interactor.proceedToNextStep(currentStep: signUpStep)
+    func initializeNextStep(with data: String) {
+        guard let signUpStep = signUpStep,
+              let currentStep = interactor.proceedToNextStep(currentStep: signUpStep) else { return }
+        interactor.proceedToNextStepWithData(data: data, currentStep: signUpStep)
         self.signUpStep = currentStep
         let signUpModule = MVDBSignUpNameRouter.createSignUpModule(for: currentStep)
         router.pushView(from: view, to: signUpModule)
@@ -50,6 +51,7 @@ final class MVDBSignUpNamePresenter: MVDBSignUpPresenterInputProtocol {
     
     func goBack() {
         guard let currentStep = signUpStep else { return }
+        interactor.proceedToPreviousStepDeletingData(currentStep: currentStep)
         router.popView(view: view, toSignUpStep: currentStep)
     }
     

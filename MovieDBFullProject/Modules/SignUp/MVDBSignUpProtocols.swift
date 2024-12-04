@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - UIView
 protocol MVDBSignUpNameUIViewDelegate: AnyObject {
-    func didTapNextViewButton()
+    func didTapNextViewButton(with data: String)
 }
 
 // MARK: - View -> Presenter
@@ -18,7 +18,7 @@ protocol MVDBSignUpPresenterInputProtocol: AnyObject {
     func viewWillAppear(view: MVDBSignUpPresenterOutputProtocol, leftSelector: Selector, rightSelector: Selector)
     func viewDidLoad()
     func viewWillDisappear()
-    func initializeNextStep()
+    func initializeNextStep(with data: String)
     func goBack()
     func help()
 }
@@ -32,7 +32,9 @@ protocol MVDBSignUpPresenterOutputProtocol: AnyObject {
 protocol MVDBSignUpInteractorInputProtocol: AnyObject {
     var presenter: MVDBSignUpInteractorOutputProtocol? { get set }
     func getCopiesForView()
-    func proceedToNextStep(currentStep: SignUpStep) -> SignUpStep
+    func proceedToNextStep(currentStep: SignUpStep) -> SignUpStep?
+    func proceedToNextStepWithData(data: String, currentStep: SignUpStep)
+    func proceedToPreviousStepDeletingData(currentStep: SignUpStep)
     func proceedToPreviousStep(currentStep: SignUpStep) -> SignUpStep
     func updateProgressState(currentStep: SignUpStep) -> Float
 }
@@ -40,6 +42,16 @@ protocol MVDBSignUpInteractorInputProtocol: AnyObject {
 // MARK: - Interactor -> Presenter
 protocol MVDBSignUpInteractorOutputProtocol: AnyObject {
     func didObtainCopiesForView(with copies: (title: String, description: String, textFieldPlaceholder: [String], termsText: String), and signUpStep: SignUpStep)
+}
+
+// MARK: - Interactor -> RemoteDataManager
+protocol MVDBSignUpRemoteDataManagerInputProtocol: AnyObject {
+    
+}
+
+protocol MVDBSignUpRemoteDataManagerOutputProtocol: AnyObject {
+    func didFetchDataWith(success data: MVDBSignUpEntity?)
+    func didFetchDataWith(failure error: Error?)
 }
 
 // MARK: - Router
