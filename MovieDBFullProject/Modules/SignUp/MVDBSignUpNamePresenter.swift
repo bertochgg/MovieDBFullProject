@@ -80,3 +80,34 @@ extension MVDBSignUpNamePresenter: MVDBSignUpInteractorOutputProtocol {
                                    selectorForAction: selector)
     }
 }
+
+extension MVDBSignUpNamePresenter: MVDBSignUpNameUIViewDelegate {
+    func didTapNextViewButton(with data: String) {
+        initializeNextStep(with: data)
+    }
+    
+    func showSecondDataTextField(textField: UITextField, placeholder: String) {
+        !interactor.isPasswordStep ? (textField.isHidden = true) : (textField.placeholder = placeholder)
+    }
+    
+    func configureViewByStep(firstTextField: MVDBTextField, secondTextField: MVDBTextField, imageView: UIImageView, selectorForHelper: Selector, selectorForShowFirst: Selector, selectorForShowSecond: Selector, target: Any) {
+        switch interactor.currentStep {
+        case .name:
+            break
+        case .email:
+            firstTextField.keyboardType = .emailAddress
+            firstTextField.autocorrectionType = .no
+            firstTextField.textContentType = .emailAddress
+            firstTextField.autocapitalizationType = .none
+        case .password:
+            imageView.isHidden = false
+            imageView.isUserInteractionEnabled = true
+            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: target, action: selectorForHelper)
+            imageView.addGestureRecognizer(tapGesture)
+            firstTextField.isSecureTextEntry = true
+            secondTextField.isSecureTextEntry = true
+            firstTextField.addIconOnTextField(image: UIImage(systemName: "eye.fill"), side: .right, selector: selectorForShowFirst, target: target)
+            secondTextField.addIconOnTextField(image: UIImage(systemName: "eye.fill"), side: .right, selector: selectorForShowSecond, target: target)
+        }
+    }
+}

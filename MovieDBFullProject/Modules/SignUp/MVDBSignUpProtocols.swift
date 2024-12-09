@@ -7,12 +7,14 @@
 
 import UIKit
 
-// MARK: - UIView
+// MARK: - UIView -> Controller
 protocol MVDBSignUpNameUIViewDelegate: AnyObject {
     func didTapNextViewButton(with data: String)
+    func showSecondDataTextField(textField: UITextField, placeholder: String)
+    func configureViewByStep(firstTextField: MVDBTextField, secondTextField: MVDBTextField, imageView: UIImageView, selectorForHelper: Selector, selectorForShowFirst: Selector, selectorForShowSecond: Selector, target: Any)
 }
 
-// MARK: - View -> Presenter
+// MARK: - Controller -> Presenter
 protocol MVDBSignUpPresenterInputProtocol: AnyObject {
     var view: MVDBSignUpPresenterOutputProtocol? { get set }
     func viewWillAppear(view: MVDBSignUpPresenterOutputProtocol, leftSelector: Selector, rightSelector: Selector)
@@ -23,7 +25,7 @@ protocol MVDBSignUpPresenterInputProtocol: AnyObject {
     func help()
 }
 
-// MARK: - Presenter -> View
+// MARK: - Presenter -> Controller
 protocol MVDBSignUpPresenterOutputProtocol: AnyObject {
     func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep, target: Any, selectorForAction: Selector)
 }
@@ -31,6 +33,8 @@ protocol MVDBSignUpPresenterOutputProtocol: AnyObject {
 // MARK: - Presenter -> Interactor
 protocol MVDBSignUpInteractorInputProtocol: AnyObject {
     var presenter: MVDBSignUpInteractorOutputProtocol? { get set }
+    var isPasswordStep: Bool { get }
+    var currentStep: SignUpStep { get }
     func getCopiesForView()
     func proceedToNextStep(currentStep: SignUpStep) -> SignUpStep?
     func proceedToNextStepWithData(data: String, currentStep: SignUpStep)

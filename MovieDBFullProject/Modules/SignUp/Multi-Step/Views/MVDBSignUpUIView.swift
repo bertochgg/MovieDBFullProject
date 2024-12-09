@@ -22,7 +22,18 @@ final class MVDBSignUpUIView: UIView {
     private lazy var termsLabel: MVDBUILabel = MVDBUILabel(style: .h3, weight: .regular, textAlignment: .natural, textColor: .slateMist)
     private lazy var continueButton: MVDBUIButton = MVDBUIButton()
     private lazy var helperModalView = MVDBHelperModalUIView()
-    private lazy var views: [UIView] = [titleLabel, helperForPasswordImageView, descriptionLabel, firstDataTextField, secondDataTextField, termsLabel, continueButton, firstErrorLabel, secondErrorLabel, helperModalView]
+    private lazy var views: [UIView] = [
+        titleLabel,
+        helperForPasswordImageView,
+        descriptionLabel,
+        firstDataTextField,
+        secondDataTextField,
+        termsLabel,
+        continueButton,
+        firstErrorLabel,
+        secondErrorLabel,
+        helperModalView
+    ]
     
     private var secondDataTextFieldWithFirstErrorConstraint: NSLayoutConstraint?
     private var secondDataTextFieldWithoutFirstErrorConstraint: NSLayoutConstraint?
@@ -46,28 +57,16 @@ final class MVDBSignUpUIView: UIView {
         descriptionLabel.text = descriptionText
         termsLabel.text = termsText
         firstDataTextField.placeholder = placeholderText
-        signUpStep != .password ? (secondDataTextField.isHidden = true) : (secondDataTextField.placeholder = secondPlaceholderText)
+        delegate?.showSecondDataTextField(textField: secondDataTextField, placeholder: secondPlaceholderText ?? "")
         firstErrorLabel.isHidden = true
         secondErrorLabel.isHidden = true
-        
-        switch signUpStep {
-        case .name:
-            break
-        case .email:
-            firstDataTextField.keyboardType = .emailAddress
-            firstDataTextField.autocorrectionType = .no
-            firstDataTextField.textContentType = .emailAddress
-            firstDataTextField.autocapitalizationType = .none
-        case .password:
-            helperForPasswordImageView.isHidden = false
-            helperForPasswordImageView.isUserInteractionEnabled = true
-            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showPasswordHelperInstructions))
-            helperForPasswordImageView.addGestureRecognizer(tapGesture)
-            firstDataTextField.isSecureTextEntry = true
-            secondDataTextField.isSecureTextEntry = true
-            firstDataTextField.addIconOnTextField(image: UIImage(systemName: "eye.fill"), side: .right, selector: #selector(showPassword), target: self)
-            secondDataTextField.addIconOnTextField(image: UIImage(systemName: "eye.fill"), side: .right, selector: #selector(showPasswordSecondTextField), target: self)
-        }
+        delegate?.configureViewByStep(firstTextField: firstDataTextField,
+                                      secondTextField: secondDataTextField,
+                                      imageView: helperForPasswordImageView,
+                                      selectorForHelper: #selector(showPasswordHelperInstructions),
+                                      selectorForShowFirst: #selector(showPassword),
+                                      selectorForShowSecond: #selector(showPasswordSecondTextField),
+                                      target: self)
     }
     
     private func setupView() {
@@ -80,7 +79,6 @@ final class MVDBSignUpUIView: UIView {
         helperModalView.layer.borderColor = UIColor.frostedPearl.cgColor
         helperModalView.layer.borderWidth = 1
         helperModalView.isHidden = true
-        self.bringSubviewToFront(helperModalView)
         views.forEach { view in addSubview(view) }
         titleLabel.numberOfLines = 0
         descriptionLabel.numberOfLines = 0
@@ -211,7 +209,7 @@ final class MVDBSignUpUIView: UIView {
         
         return isValid
     }
-
+    
     private func updateSecondTextFieldPosition(showError: Bool) {
         secondDataTextFieldWithoutFirstErrorConstraint?.isActive = !showError
         secondDataTextFieldWithFirstErrorConstraint?.isActive = showError
