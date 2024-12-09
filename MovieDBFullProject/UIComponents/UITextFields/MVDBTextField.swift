@@ -46,7 +46,7 @@ final class MVDBTextField: UITextField {
         leftViewMode = .always
     }
     
-    func addIconOnTextField(image: UIImage?, side: IconSide, selector: Selector? = nil, target: UIView? = nil) {
+    func addIconOnTextField(image: UIImage?, side: IconSide, selector: Selector? = nil, target: Any? = nil) {
         guard let image = image else { return }
         let xPosition: Int = side == .right ? 4 : 16
         let iconSize: Int = side == .right ? 30 : 20

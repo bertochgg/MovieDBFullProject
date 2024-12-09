@@ -8,18 +8,16 @@
 import UIKit
 
 final class MVDBSignUpNameViewController: UIViewController {
-    
     private let presenter: MVDBSignUpPresenterInputProtocol
-    private var mainView: MVDBSignUpUIView?
+    private var mainView: MVDBSignUpUIView
     
     override func loadView() {
-        mainView = MVDBSignUpUIView()
-        mainView?.delegate = self
         self.view = mainView
     }
     
-    init(presenter: MVDBSignUpPresenterInputProtocol) {
+    init(presenter: MVDBSignUpPresenterInputProtocol, mainView: MVDBSignUpUIView) {
         self.presenter = presenter
+        self.mainView = mainView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -59,7 +57,7 @@ final class MVDBSignUpNameViewController: UIViewController {
 
 extension MVDBSignUpNameViewController: MVDBSignUpPresenterOutputProtocol {
     func displayCopiesForView(screenTitle: String, screenDescription: String, textFieldPlaceholder: [String], termsText: String, signUpStep: SignUpStep, target: Any, selectorForAction: Selector) {
-        mainView?.configure(titleText: screenTitle,
+        mainView.configure(titleText: screenTitle,
                             descriptionText: screenDescription,
                             termsText: termsText,
                             placeholderText: textFieldPlaceholder.first ?? "",
@@ -67,11 +65,5 @@ extension MVDBSignUpNameViewController: MVDBSignUpPresenterOutputProtocol {
                             signUpStep: signUpStep,
                             target: target,
                             selector: selectorForAction)
-    }
-}
-
-extension MVDBSignUpNameViewController: MVDBSignUpNameUIViewDelegate {
-    func didTapNextViewButton(with data: String) {
-        presenter.initializeNextStep(with: data)
     }
 }

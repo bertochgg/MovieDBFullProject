@@ -14,6 +14,14 @@ final class MVDBSignUpNameInteractor: MVDBSignUpInteractorInputProtocol {
     private let signUpPasswordEntity: MVDBSignUpPasswordEntity
     private let signUpStep: SignUpStep
     
+    var isPasswordStep: Bool {
+        return signUpStep == .password
+    }
+    
+    var currentStep: SignUpStep {
+        return signUpStep
+    }
+    
     init(signUpNameEntity: MVDBSignUpNameEntity, signUpEmailEntity: MVDBSignUpEmailEntity, signUpPasswordEntity: MVDBSignUpPasswordEntity, signUpStep: SignUpStep) {
         self.signUpNameEntity = signUpNameEntity
         self.signUpEmailEntity = signUpEmailEntity

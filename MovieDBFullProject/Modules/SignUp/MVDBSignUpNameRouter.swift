@@ -16,11 +16,13 @@ final class MVDBSignUpNameRouter: MVDBSignUpRouterProtocol {
                                                                                      signUpPasswordEntity: MVDBSignUpPasswordEntity(),
                                                                                      signUpStep: signUpStep)
         let router: MVDBSignUpRouterProtocol = MVDBSignUpNameRouter()
-        let presenter: MVDBSignUpPresenterInputProtocol & MVDBSignUpInteractorOutputProtocol = MVDBSignUpNamePresenter(interactor: interactor, router: router)
-        let view = MVDBSignUpNameViewController(presenter: presenter)
+        let presenter: MVDBSignUpPresenterInputProtocol & MVDBSignUpInteractorOutputProtocol & MVDBSignUpNameUIViewDelegate = MVDBSignUpNamePresenter(interactor: interactor, router: router)
+        let mainView = MVDBSignUpUIView()
+        let view = MVDBSignUpNameViewController(presenter: presenter, mainView: mainView)
         
         interactor.presenter = presenter
         presenter.view = view
+        mainView.delegate = presenter
         router.viewController = view
         
         return view
